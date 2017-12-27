@@ -5,11 +5,11 @@ package Creatures.Bad;/*
 */
 
 import Position.PositionInterface;
-import Settings.Settings;
+import Settings.ImagesSet;
 
 public class Lolo extends Monster  {
     public Lolo(PositionInterface positionInterface)   {
-        super("喽",positionInterface,Settings.LoloImage);
+        super("喽",positionInterface, ImagesSet.LoloImage);
     }
 
     @Override

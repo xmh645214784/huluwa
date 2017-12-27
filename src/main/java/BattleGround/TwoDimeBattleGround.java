@@ -21,12 +21,12 @@ public class TwoDimeBattleGround extends BattleGround {
     private void initCreature() {
         CreatureFactory creatureFactory = new CreatureFactory();
         for (int i = 0; i < 7; i++)
-            addCreatures(creatureFactory.createCreature(Huluwa.class, positionInterfaces.get(i * Settings.WIDTH)));
+            addCreatures(creatureFactory.createCreature(Huluwa.class, positionInterfaces.get(i * Settings.getInstance().getNRX())));
     }
 
     protected void initPositions() {
-        for (int i = 0; i < Settings.WIDTH; i++) {
-            for (int j = 0; j < Settings.HEIGHT; j++) {
+        for (int i = 0; i < Settings.getInstance().getNRX(); i++) {
+            for (int j = 0; j < Settings.getInstance().getNRY(); j++) {
                 positionInterfaces.add(new TwoDimePosition(i, j, null));
             }
         }

@@ -1,7 +1,7 @@
 package Creatures.Good;
 
 import Position.PositionInterface;
-import Settings.Settings;
+import Settings.ImagesSet;
 
 public class Grandpa extends Good {
     private static Grandpa mInstance;
@@ -13,7 +13,7 @@ public class Grandpa extends Good {
     }
 
     private Grandpa(PositionInterface positionInterface) {
-        super("爷",positionInterface,Settings.GrandpaImage);
+        super("爷",positionInterface, ImagesSet.GrandpaImage);
     }
 
     @Override
