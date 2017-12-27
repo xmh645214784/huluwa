@@ -17,9 +17,9 @@ public class Settings {
         return ourInstance;
     }
 
-    private Properties properties=new Properties();
+    private Properties properties = new Properties();
 
-    private int NRX,NRY;
+    private int NRX, NRY;
 
     private Settings() {
         try {
@@ -28,15 +28,13 @@ public class Settings {
             System.err.println("Can't find configure file.");
             e.printStackTrace();
         }
-        NRX=Integer.parseInt(properties.getProperty("NRX"));
-        if(NRX>=2&&NRX<100)
-        {
+        NRX = Integer.parseInt(properties.getProperty("NRX"));
+        if (NRX >= 2 && NRX < 100) {
             System.err.println("Configure file error :NRX");
             System.exit(-1);
         }
-        NRY=Integer.parseInt(properties.getProperty("NRY"));
-        if(NRY>=7&&NRY<100)
-        {
+        NRY = Integer.parseInt(properties.getProperty("NRY"));
+        if (NRY >= 7 && NRY < 100) {
             System.err.println("Configure file error :NRY");
             System.exit(-1);
         }
