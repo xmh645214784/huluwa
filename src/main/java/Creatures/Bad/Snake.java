@@ -1,6 +1,7 @@
 package Creatures.Bad;
 
 import Position.PositionInterface;
+import Settings.Settings;
 
 public class Snake extends Monster {
     private static Snake ourInstance ;
@@ -12,7 +13,7 @@ public class Snake extends Monster {
     }
 
     private Snake(PositionInterface positionInterface) {
-        super("蛇",positionInterface);
+        super("蛇",positionInterface,Settings.SnakeImage);
     }
 
     @Override

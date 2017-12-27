@@ -5,6 +5,13 @@ import Creatures.Creature;
 public class TwoDimePosition implements PositionInterface{
     private int x, y;
     private Creature holder;
+
+    public TwoDimePosition(int x, int y, Creature holder) {
+        this.x = x;
+        this.y = y;
+        this.holder = holder;
+    }
+
     public Creature getHolder() {
         return holder;
     }

@@ -1,6 +1,7 @@
 package Creatures.Good;
 
 import Position.PositionInterface;
+import Settings.Settings;
 
 public class Huluwa extends Good {
 
@@ -17,7 +18,7 @@ public class Huluwa extends Good {
     }
 
     public Huluwa(PositionInterface positionInterface) {
-        super(SENIORITY.getSENIORITY(count).toString(), positionInterface);
+        super(SENIORITY.getSENIORITY(count).toString(), positionInterface,Settings.HuluwaImage[count]);
         this.color = COLOR.getCOLOR(count);
         this.seniority = SENIORITY.getSENIORITY(count);
         count++;

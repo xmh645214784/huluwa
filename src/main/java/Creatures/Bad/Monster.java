@@ -7,9 +7,12 @@ package Creatures.Bad;/*
 import Creatures.Creature;
 import Position.PositionInterface;
 
+import javax.swing.*;
+import java.awt.*;
+
 public abstract class Monster extends Creature {
-    Monster(String name, PositionInterface position)
+    Monster(String name, PositionInterface position,Image image)
     {
-        super(name,position);
+        super(name,position,image);
     }
 }

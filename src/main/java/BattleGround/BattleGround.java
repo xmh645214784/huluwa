@@ -1,13 +1,15 @@
 package BattleGround;
 
 import Creatures.Creature;
+import Creatures.CreatureFactory;
 import Position.PositionInterface;
 
+import java.util.ArrayList;
 import java.util.List;
 
 abstract public class BattleGround {
-    protected List<PositionInterface> positionInterfaces;
-    protected List<Creature> creatures;
+    protected List<PositionInterface> positionInterfaces=new ArrayList<PositionInterface>();
+    protected List<Creature> creatures=new ArrayList<Creature>();
 
     public List<PositionInterface> getPositionInterfaces() {
         return positionInterfaces;
@@ -29,7 +31,7 @@ abstract public class BattleGround {
         return pos.getHolder();
     }
 
-    public abstract void initCreature();
+    protected abstract void initPositions();
 
     //the battle processing
     public abstract void battle();

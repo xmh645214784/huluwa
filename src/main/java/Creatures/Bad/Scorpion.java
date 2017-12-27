@@ -1,6 +1,7 @@
 package Creatures.Bad;
 
 import Position.PositionInterface;
+import Settings.Settings;
 
 public class Scorpion extends Monster {
     private static Scorpion ourInstance ;
@@ -12,7 +13,7 @@ public class Scorpion extends Monster {
     }
 
     private Scorpion(PositionInterface positionInterface) {
-        super("蝎",positionInterface);
+        super("蝎",positionInterface,Settings.ScorpionImage);
     }
 
 
