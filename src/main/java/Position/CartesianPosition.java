@@ -1,26 +1,26 @@
+package Position;
+
+import Creatures.Creature;
+
 public class CartesianPosition implements PositionInterface{
 
     private int[] coords;//i.e.  (x,y) or (x,y,z) or (x1,x2,x3...)
     private Creature holder;
 
 
-    @Override
     public Creature getHolder() {
         return holder;
     }
 
-    @Override
     public void setHolder(Creature holder) {
         this.holder = holder;
     }
 
-    @Override
     public int[] getPosition(){
         assert coords != null:"Uninitialized coords";
         return coords;
     }
 
-    @Override
     public void setPosition(int ...pos) {
         this.coords=pos;
     }

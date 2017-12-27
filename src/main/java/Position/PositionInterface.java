@@ -1,3 +1,6 @@
+package Position;
+import Creatures.Creature;
+
 public interface PositionInterface {
     Creature getHolder();
     void setHolder(Creature holder);
