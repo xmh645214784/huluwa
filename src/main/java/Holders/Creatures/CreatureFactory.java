@@ -1,10 +1,10 @@
-package Creatures;
+package Holders.Creatures;
 
-import Creatures.Bad.Lolo;
-import Creatures.Bad.Scorpion;
-import Creatures.Bad.Snake;
-import Creatures.Good.Grandpa;
-import Creatures.Good.Huluwa;
+import Holders.Creatures.Bad.Lolo;
+import Holders.Creatures.Bad.Scorpion;
+import Holders.Creatures.Bad.Snake;
+import Holders.Creatures.Good.Grandpa;
+import Holders.Creatures.Good.Huluwa;
 import Position.PositionInterface;
 
 public class CreatureFactory implements CreatureFactoryInterface {

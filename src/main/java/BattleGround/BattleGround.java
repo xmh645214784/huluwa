@@ -1,7 +1,7 @@
 package BattleGround;
 
-import Creatures.Creature;
-import Creatures.CreatureFactory;
+import Holders.Creatures.Creature;
+import Holders.Holder;
 import Position.PositionInterface;
 
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ abstract public class BattleGround {
         return creatures.remove(target);
     }
 
-    public Creature getCreatureInPosition (PositionInterface pos){
+    public Holder getHolderInPosition (PositionInterface pos){
         return pos.getHolder();
     }
 

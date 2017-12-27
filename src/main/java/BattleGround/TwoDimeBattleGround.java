@@ -1,7 +1,9 @@
 package BattleGround;
 
-import Creatures.CreatureFactory;
-import Creatures.Good.Huluwa;
+import Holders.Creatures.CreatureFactory;
+import Holders.Creatures.Good.Huluwa;
+import Holders.Land;
+import Position.PositionInterface;
 import Position.TwoDimePosition;
 import Settings.*;
 
@@ -27,7 +29,10 @@ public class TwoDimeBattleGround extends BattleGround {
     protected void initPositions() {
         for (int i = 0; i < Settings.getInstance().getNRX(); i++) {
             for (int j = 0; j < Settings.getInstance().getNRY(); j++) {
-                positionInterfaces.add(new TwoDimePosition(i, j, null));
+                PositionInterface positionInterface=new TwoDimePosition(i,j,null);
+                Land land=new Land(positionInterface);
+                positionInterface.setHolder(land);
+                positionInterfaces.add(positionInterface);
             }
         }
     }

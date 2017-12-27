@@ -1,24 +1,26 @@
 package Position;
 
-import Creatures.Creature;
+import Holders.Creatures.Creature;
+import Holders.Holder;
 
 public class TwoDimePosition implements PositionInterface{
     private int x, y;
-    private Creature holder;
+    private Holder holder;
 
-    public TwoDimePosition(int x, int y, Creature holder) {
+    public TwoDimePosition(int x, int y, Holder holder) {
         this.x = x;
         this.y = y;
         this.holder = holder;
     }
 
-    public Creature getHolder() {
+    public Holder getHolder() {
         return holder;
     }
 
-    public void setHolder(Creature holder) {
+    public void setHolder(Holder holder) {
         this.holder=holder;
     }
+
 
     public int[] getPosition() {
         int[] pos=new int[2];

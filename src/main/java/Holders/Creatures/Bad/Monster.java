@@ -1,13 +1,12 @@
-package Creatures.Bad;/*
+package Holders.Creatures.Bad;/*
 * @author Minhui Xie
 * @date 24,10,2017
 * @time 18:25
 */
 
-import Creatures.Creature;
+import Holders.Creatures.Creature;
 import Position.PositionInterface;
 
-import javax.swing.*;
 import java.awt.*;
 
 public abstract class Monster extends Creature {

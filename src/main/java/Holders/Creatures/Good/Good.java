@@ -1,9 +1,8 @@
-package Creatures.Good;
+package Holders.Creatures.Good;
 
-import Creatures.Creature;
+import Holders.Creatures.Creature;
 import Position.PositionInterface;
 
-import javax.swing.*;
 import java.awt.*;
 
 public abstract class Good extends Creature {

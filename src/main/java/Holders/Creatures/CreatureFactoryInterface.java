@@ -1,4 +1,4 @@
-package Creatures;
+package Holders.Creatures;
 
 import Position.PositionInterface;
 

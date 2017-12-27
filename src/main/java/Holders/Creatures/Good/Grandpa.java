@@ -1,4 +1,4 @@
-package Creatures.Good;
+package Holders.Creatures.Good;
 
 import Position.PositionInterface;
 import Settings.ImagesSet;

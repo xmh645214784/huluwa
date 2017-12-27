@@ -1,9 +1,10 @@
 package Position;
-import Creatures.Creature;
+import Holders.Creatures.Creature;
+import Holders.Holder;
 
 public interface PositionInterface {
-    Creature getHolder();
-    void setHolder(Creature holder);
+    Holder getHolder();
+    void setHolder(Holder holder);
     int[] getPosition();
     void setPosition(int ...pos);
     String toString();
