@@ -2,40 +2,39 @@ package Creatures;
 
 import Position.PositionInterface;
 
-abstract public class Creature {
+abstract public class Creature extends Thread {
 
     protected PositionInterface position;
-    protected String name;
+    protected String mName;
 
-    public String getName() {
-        return name;
+    public String getmName() {
+        return mName;
     }
 
-    Creature(String name,PositionInterface position)
-    {
-        this.name=name;
+    protected Creature(String name, PositionInterface position) {
+        this.mName = name;
         this.setPosition(position);
     }
 
-    public void setPosition(PositionInterface position)
-    {
-        if(this.position!=null)
+    public void setPosition(PositionInterface position) {
+        if (this.position != null)
             this.position.setHolder(null);
-        this.position=position;
+        this.position = position;
         position.setHolder(this);
     }
-    public PositionInterface getPosition(){
+
+    public PositionInterface getPosition() {
         return this.position;
     }
 
     public void report() {
-        System.out.println(this.toString()+"@" + this.position.toString());
+        System.out.println(this.toString() + "@" + this.position.toString());
     }
 
     @Override
     public String toString() {
-        return name;
+        return mName;
     }
 
-    abstract public void act();
+    abstract public void run();
 }

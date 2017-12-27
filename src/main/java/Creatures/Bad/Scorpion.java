@@ -1,4 +1,4 @@
-package Creatures;
+package Creatures.Bad;
 
 import Position.PositionInterface;
 
@@ -17,7 +17,7 @@ public class Scorpion extends Monster {
 
 
     @Override
-    public void act(){
+    public void run(){
         ;
     }
 }

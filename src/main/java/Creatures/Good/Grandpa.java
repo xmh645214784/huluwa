@@ -1,8 +1,8 @@
-package Creatures;
+package Creatures.Good;
 
 import Position.PositionInterface;
 
-public class Grandpa extends Creature {
+public class Grandpa extends Good {
     private static Grandpa mInstance;
 
     public static Grandpa getInstance(PositionInterface positionInterface) {
@@ -17,12 +17,12 @@ public class Grandpa extends Creature {
 
     @Override
     public void report(){
-        System.out.println(name+"@"+this.position.toString());
+        System.out.println(mName +"@"+this.position.toString());
     }
 
 
     @Override
-    public void act() {
+    public void run() {
         System.out.println("爷爷加入战场：我来了，葫芦娃们，我们上！");
     }
 }

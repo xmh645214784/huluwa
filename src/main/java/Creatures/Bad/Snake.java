@@ -1,6 +1,5 @@
-package Creatures;
+package Creatures.Bad;
 
-import Creatures.Monster;
 import Position.PositionInterface;
 
 public class Snake extends Monster {
@@ -18,11 +17,11 @@ public class Snake extends Monster {
 
     @Override
     public String toString() {
-        return name;
+        return mName;
     }
 
     @Override
-    public void act() {
+    public void run() {
         System.out.println("蛇精加入战场：如意如意,随我心意！");
     }
 }
