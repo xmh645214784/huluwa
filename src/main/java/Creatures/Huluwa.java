@@ -1,9 +1,7 @@
 package Creatures;
 
-import Common.*;
-import Common.Comparable;
 import Position.PositionInterface;
-public class Huluwa extends Creature implements Comparable {
+public class Huluwa extends Creature {
 
     private COLOR color;
     private SENIORITY seniority;
@@ -21,14 +19,6 @@ public class Huluwa extends Creature implements Comparable {
         this.seniority  = seniority;
     }
 
-
-    public boolean biggerThan(Comparable brother){
-
-        if (brother instanceof  Huluwa)
-            return this.getSeniority().ordinal()> ((Huluwa) brother).getSeniority().ordinal();
-        else
-            return false;
-    }
     @Override
     public void act(){}
     public enum COLOR {

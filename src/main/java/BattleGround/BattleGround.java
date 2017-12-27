@@ -6,10 +6,10 @@ import Position.PositionInterface;
 import java.util.List;
 
 abstract public class BattleGround {
-    protected PositionInterface[] positionInterfaces;
+    protected List<PositionInterface> positionInterfaces;
     protected List<Creature> creatures;
 
-    public PositionInterface[] getPositionInterfaces() {
+    public List<PositionInterface> getPositionInterfaces() {
         return positionInterfaces;
     }
     public List<Creature> getCreatures() {
@@ -28,9 +28,6 @@ abstract public class BattleGround {
     public Creature getCreatureInPosition (PositionInterface pos){
         return pos.getHolder();
     }
-
-    //view the battleground
-    abstract void show();
 
     public abstract void initCreature();
 

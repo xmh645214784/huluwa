@@ -1,8 +1,7 @@
-import BattleGround.TwoDimensionBattleGround;
-import BattleGround.BattleGround;
+import BattleGround.*;
 public class Main {
     public static void main(String[] args) {
-        BattleGround battleGround = TwoDimensionBattleGround.getInstance();
+        BattleGround battleGround = TwoDimeBattleGround.getInstance();
         battleGround.initCreature();
         battleGround.battle();
     }
