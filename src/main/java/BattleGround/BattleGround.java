@@ -34,5 +34,5 @@ abstract public class BattleGround {
     protected abstract void initPositions();
 
     //the battle processing
-    public abstract void battle();
+    protected abstract void battle();
 }

@@ -28,8 +28,4 @@ public class TwoDimePosition implements PositionInterface{
         pos[1]=y;
         return pos;
     }
-
-    public void setPosition(int... pos) {
-        if ((pos.length != 2)) throw new AssertionError();
-    }
 }

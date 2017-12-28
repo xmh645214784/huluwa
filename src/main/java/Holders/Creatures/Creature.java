@@ -23,6 +23,15 @@ abstract public class Creature extends Holder implements Runnable {
         System.out.println(this.toString() + "@" + this.position.toString());
     }
 
+
+    public void setPosition(PositionInterface position) {
+        if (this.position != null)
+            this.position.setHolder(null);// set the original position null
+        this.position = position;
+        position.setHolder(this);
+    }
+    
+
     @Override
     public String toString() {
         return mName;

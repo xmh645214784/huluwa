@@ -5,9 +5,7 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException {
-        Class.forName("Settings.ImagesSet");
         BattleGround battleGround = TwoDimeBattleGround.getInstance();
-        battleGround.battle();
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 Application ex = new Application();

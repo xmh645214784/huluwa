@@ -1,5 +1,6 @@
 package Holders.Creatures.Good;
 
+import BattleGround.TwoDimeBattleGround;
 import Position.PositionInterface;
 import Settings.ImagesSet;
 
@@ -26,6 +27,7 @@ public class Huluwa extends Good {
 
     @Override
     public void run() {
+
     }
 
     public enum COLOR {

@@ -2,6 +2,7 @@ package View;
 
 import BattleGround.*;
 import Holders.Creatures.Creature;
+import Holders.Holder;
 import Position.PositionInterface;
 
 import Settings.*;
@@ -31,7 +32,9 @@ public class Board extends JPanel implements View {
         for (int j = 0; j < nry; j++)
             for (int i = 0; i < nrx; i++) {
                 g.drawImage(ImagesSet.GroundImage, 47 * i, 47 * j, this);
-                g.drawImage(positionInterfaces.get(j*nry+i).getHolder().getImage(),47 * i, 47 * j, this);
+                Holder holder=positionInterfaces.get(j*nry+i).getHolder();
+                if(holder !=null)
+                    g.drawImage(holder.getImage(),47 * i, 47 * j, this);
             }
 
 
