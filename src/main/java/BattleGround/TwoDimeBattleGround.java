@@ -16,7 +16,6 @@ public class TwoDimeBattleGround extends BattleGround {
     }
 
     private TwoDimeBattleGround() {
-        initPositions();
         initCreature();
         battle();
     }
@@ -27,13 +26,6 @@ public class TwoDimeBattleGround extends BattleGround {
         for (int i = 0; i < 7; i++)
             addCreatures(creatureFactory.createCreature(Huluwa.class, positionInterfaces.get(i * Settings.getInstance().getNRX())));
     }
-
-    protected void initPositions() {
-        {
-
-        }
-    }
-
     protected void battle() {
         for(Creature creature:creatures)
         {

@@ -9,6 +9,7 @@ public class TwoDimePositionSet {
     private static int NRX= Settings.getInstance().getNRX();
     private static int NRY=Settings.getInstance().getNRY();
 
+
     public static List<PositionInterface> getPositionInterfaces() {
         return positionInterfaces;
     }
