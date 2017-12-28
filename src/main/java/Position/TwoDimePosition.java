@@ -22,7 +22,7 @@ public class TwoDimePosition implements PositionInterface{
     }
 
 
-    public int[] getPosition() {
+    public int[] getValue() {
         int[] pos=new int[2];
         pos[0]=x;
         pos[1]=y;

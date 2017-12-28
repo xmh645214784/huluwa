@@ -1,8 +1,9 @@
 package Holders.Creatures.Good;
 
-import BattleGround.TwoDimeBattleGround;
 import Position.PositionInterface;
 import Settings.ImagesSet;
+
+import java.util.Random;
 
 public class Huluwa extends Good {
 
@@ -27,7 +28,16 @@ public class Huluwa extends Good {
 
     @Override
     public void run() {
+        while (!Thread.interrupted()){
+            Random rand = new Random();
+            this.moveoffset(1,0);
+            try {
+                Thread.sleep(rand.nextInt(1000) + 1000);
+            } catch (Exception e) {
 
+            }
+        }
+        moveoffset(1,0);
     }
 
     public enum COLOR {

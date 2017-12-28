@@ -1,7 +1,10 @@
 package Holders.Creatures;
 
+import BattleGround.TwoDimeBattleGround;
 import Holders.Holder;
 import Position.PositionInterface;
+import Position.TwoDimePosition;
+import Position.TwoDimePositionSet;
 
 import java.awt.*;
 
@@ -14,8 +17,8 @@ abstract public class Creature extends Holder implements Runnable {
         return mName;
     }
 
-    protected Creature(String name, PositionInterface position,Image image) {
-        super(image,position);
+    protected Creature(String name, PositionInterface position, Image image) {
+        super(image, position);
     }
 
 
@@ -30,7 +33,7 @@ abstract public class Creature extends Holder implements Runnable {
         this.position = position;
         position.setHolder(this);
     }
-    
+
 
     @Override
     public String toString() {
@@ -38,4 +41,15 @@ abstract public class Creature extends Holder implements Runnable {
     }
 
     abstract public void run();
+
+    public void moveoffset(int offsetx, int offsety) {
+        int[] nowPos = this.getPosition().getValue();
+
+        nowPos[0] += offsetx;
+        nowPos[1] += offsety;
+        PositionInterface newpos= TwoDimePositionSet.getPositionInterface(nowPos[0], nowPos[1]);
+        if (newpos!= null) {
+            setPosition(newpos);
+        }
+    }
 }

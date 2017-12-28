@@ -5,6 +5,6 @@ import Holders.Holder;
 public interface PositionInterface {
     Holder getHolder();
     void setHolder(Holder holder);
-    int[] getPosition();
+    int[] getValue();
     String toString();
 }

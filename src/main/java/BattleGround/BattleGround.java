@@ -3,18 +3,21 @@ package BattleGround;
 import Holders.Creatures.Creature;
 import Holders.Holder;
 import Position.PositionInterface;
+import Position.TwoDimePositionSet;
+import Settings.Settings;
 
 import java.util.ArrayList;
 import java.util.List;
 
 abstract public class BattleGround {
-    protected List<PositionInterface> positionInterfaces=new ArrayList<PositionInterface>();
-    protected List<Creature> creatures=new ArrayList<Creature>();
+    static protected List<PositionInterface> positionInterfaces= TwoDimePositionSet.getPositionInterfaces();
+    static protected List<Creature> creatures=new ArrayList<Creature>();
 
-    public List<PositionInterface> getPositionInterfaces() {
+
+    static public List<PositionInterface> getPositionInterfaces() {
         return positionInterfaces;
     }
-    public List<Creature> getCreatures() {
+    static public List<Creature> getCreatures() {
         return creatures;
     }
 
@@ -35,4 +38,5 @@ abstract public class BattleGround {
 
     //the battle processing
     protected abstract void battle();
+
 }

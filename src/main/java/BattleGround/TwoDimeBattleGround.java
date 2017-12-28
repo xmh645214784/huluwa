@@ -30,11 +30,7 @@ public class TwoDimeBattleGround extends BattleGround {
 
     protected void initPositions() {
         {
-            for (int j = 0; j < Settings.getInstance().getNRY(); j++)
-                for (int i = 0; i < Settings.getInstance().getNRX(); i++) {
-                PositionInterface positionInterface=new TwoDimePosition(i,j,null);
-                positionInterfaces.add(positionInterface);
-            }
+
         }
     }
 
@@ -44,4 +40,6 @@ public class TwoDimeBattleGround extends BattleGround {
             new Thread(creature).start();
         }
     }
+
+
 }

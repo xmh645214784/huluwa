@@ -6,10 +6,11 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.Set;
 
 public interface ImagesSet {
-    final int WINWIDTH=500;
-    final int WINHEIGHT=500;
+    final int WINWIDTH=50*Settings.getInstance().getNRX();
+    final int WINHEIGHT=50*Settings.getInstance().getNRY();
     final Image[] HuluwaImage=new Image[]{
         new ImageIcon(ImagesSet.class.getClassLoader().getResource("1.png")).getImage(),
         new ImageIcon(ImagesSet.class.getClassLoader().getResource("2.png")).getImage(),
