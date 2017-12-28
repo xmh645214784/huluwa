@@ -4,7 +4,7 @@ import Position.PositionInterface;
 
 import java.awt.*;
 
-public class Holder {
+public class Holder{
     public Image getImage() {
         return image;
     }

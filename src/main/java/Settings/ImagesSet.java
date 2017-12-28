@@ -27,5 +27,6 @@ public interface ImagesSet {
 
     final Image GroundImage=new ImageIcon(ImagesSet.class.getClassLoader().getResource("ground.png")).getImage();
 
+    final Image HelloImage=new ImageIcon(ImagesSet.class.getClassLoader().getResource("hello.png")).getImage();
 
 }

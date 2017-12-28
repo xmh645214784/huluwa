@@ -37,7 +37,7 @@ public class TwoDimeBattleGround extends BattleGround {
         for(int i=0;i<Settings.getInstance().getNR_LOLOS();i++)
             addCreatures(creatureFactory.createCreature(Lolo.class,null));
 
-        FormationHeyi.changFormation(
+        FormationArrow.changFormation(
                 TwoDimePositionSet.getPositionInterface(10,5), monsters
         );
 
@@ -45,9 +45,9 @@ public class TwoDimeBattleGround extends BattleGround {
     protected void battle() {
         for(Creature creature:creatures)
         {
-            new Thread(creature).start();
+            creature.setThread(new Thread(creature));
+            creature.getThread().start();
         }
     }
-
 
 }

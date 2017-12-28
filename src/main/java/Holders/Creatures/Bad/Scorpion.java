@@ -1,5 +1,6 @@
 package Holders.Creatures.Bad;
 
+import BattleGround.BattleGround;
 import Position.PositionInterface;
 import Settings.ImagesSet;
 
@@ -19,6 +20,7 @@ public class Scorpion extends Monster {
 
     @Override
     public void run(){
-        ;
+        if(BattleGround.gameIsPaused)
+            return;;
     }
 }

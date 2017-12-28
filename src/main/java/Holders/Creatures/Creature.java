@@ -10,6 +10,16 @@ import java.awt.*;
 
 abstract public class Creature extends Holder implements Runnable {
 
+    public void setThread(Thread thread) {
+        this.thread = thread;
+    }
+
+    public Thread getThread() {
+
+        return thread;
+    }
+
+    private Thread thread;
 
     protected String mName;
 

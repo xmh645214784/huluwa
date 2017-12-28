@@ -14,11 +14,11 @@ public class Application extends JFrame {
     private void initUI() {
         final Board board = new Board();
         add(board);
-        setFocusable(true);
-        setSize(ImagesSet.WINWIDTH, ImagesSet.WINHEIGHT);
+                setSize(ImagesSet.WINWIDTH, ImagesSet.WINHEIGHT);
         setTitle("Application");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        setVisible(true);
 
         new Timer(100, new ActionListener() {
             public void actionPerformed(ActionEvent e) {

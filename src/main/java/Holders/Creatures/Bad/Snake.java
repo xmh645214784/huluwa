@@ -1,5 +1,6 @@
 package Holders.Creatures.Bad;
 
+import BattleGround.BattleGround;
 import Position.PositionInterface;
 import Settings.ImagesSet;
 
@@ -23,6 +24,7 @@ public class Snake extends Monster {
 
     @Override
     public void run() {
-        System.out.println("蛇精加入战场：如意如意,随我心意！");
+        if(BattleGround.gameIsPaused)
+            return;
     }
 }

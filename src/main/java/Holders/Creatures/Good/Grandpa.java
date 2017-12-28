@@ -1,5 +1,6 @@
 package Holders.Creatures.Good;
 
+import BattleGround.BattleGround;
 import Position.PositionInterface;
 import Settings.ImagesSet;
 
@@ -24,6 +25,7 @@ public class Grandpa extends Good {
 
     @Override
     public void run() {
-        System.out.println("爷爷加入战场：我来了，葫芦娃们，我们上！");
+        if(BattleGround.gameIsPaused)
+            return;
     }
 }

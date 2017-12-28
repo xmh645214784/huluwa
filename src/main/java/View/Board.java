@@ -1,32 +1,35 @@
 package View;
 
-import BattleGround.*;
+import BattleGround.BattleGround;
+import BattleGround.TwoDimeBattleGround;
 import Holders.Creatures.Creature;
 import Holders.Holder;
 import Position.PositionInterface;
+import Settings.ImagesSet;
+import Settings.Settings;
 
-import Settings.*;
-
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.util.List;
-import javax.swing.Timer;
 
 public class Board extends JPanel implements View {
-
     public Board() {
+        addKeyListener(new TAdapter());
+        setFocusable(true);
+        setVisible(true);
+        requestFocusInWindow();
     }
 
     @Override
     public void paint(Graphics g) {
         super.paint(g);
-        show(g, TwoDimeBattleGround.getInstance().getPositionInterfaces());
+        if (!BattleGround.gameIsStart) {
+            g.drawImage(ImagesSet.HelloImage, 0, 0, this.getWidth(), this.getHeight(), this);
+        } else {
+            show(g, TwoDimeBattleGround.getInstance().getPositionInterfaces());
+        }
     }
 
 
@@ -36,11 +39,43 @@ public class Board extends JPanel implements View {
         for (int j = 0; j < nry; j++)
             for (int i = 0; i < nrx; i++) {
                 g.drawImage(ImagesSet.GroundImage, 47 * i, 47 * j, this);
-                Holder holder=positionInterfaces.get(j*nry+i).getHolder();
-                if(holder !=null)
-                    g.drawImage(holder.getImage(),47 * i, 47 * j, this);
+                Holder holder = positionInterfaces.get(j * nry + i).getHolder();
+                if (holder != null)
+                    g.drawImage(holder.getImage(), 47 * i, 47 * j, this);
             }
+    }
 
-
+    class TAdapter extends KeyAdapter {
+        @Override
+        public void keyPressed(KeyEvent e) {
+            int key = e.getKeyCode();
+            if (key == KeyEvent.VK_SPACE) {
+                if (BattleGround.gameIsStart == false) {
+                    BattleGround.gameIsStart = true;
+                    BattleGround.gameIsPaused = false;
+                    TwoDimeBattleGround.getInstance();
+                    return;
+                }
+                BattleGround.gameIsPaused=!BattleGround.gameIsPaused;
+//                if(BattleGround.gameIsPaused)
+//                {
+//                    List<Creature> creatures=TwoDimeBattleGround.getCreatures();
+//                    for(Creature temp:creatures) {
+//                        try {
+//                            temp.getThread().wait();
+//                        } catch (InterruptedException e1) {
+//                            e1.printStackTrace();
+//                        }
+//                    }
+//                }
+//                else {
+//                    List<Creature> creatures=TwoDimeBattleGround.getCreatures();
+//                    for(Creature temp:creatures)
+//                    {
+//                        temp.getThread().notify();
+//                    }
+//                }
+            }
+        }
     }
 }

@@ -4,6 +4,7 @@ package Holders.Creatures.Bad;/*
 * @time 19:20
 */
 
+import BattleGround.BattleGround;
 import Position.PositionInterface;
 import Settings.ImagesSet;
 
@@ -14,6 +15,8 @@ public class Lolo extends Monster  {
 
     @Override
     public void run(){
+        if(BattleGround.gameIsPaused)
+            return;
         ;//小人物，哪那么多屁话
     }
 }

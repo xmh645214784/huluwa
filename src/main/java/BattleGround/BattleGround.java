@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 abstract public class BattleGround {
+    public static volatile boolean gameIsPaused = false;
+    public static boolean gameIsStart =false;
     static protected List<PositionInterface> positionInterfaces = TwoDimePositionSet.getPositionInterfaces();
     static protected List<Creature> creatures = new ArrayList<Creature>();
     static protected List<Good> goods = new ArrayList<Good>();

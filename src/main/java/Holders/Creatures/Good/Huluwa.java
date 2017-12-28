@@ -1,5 +1,6 @@
 package Holders.Creatures.Good;
 
+import BattleGround.BattleGround;
 import Position.PositionInterface;
 import Settings.ImagesSet;
 
@@ -29,6 +30,8 @@ public class Huluwa extends Good {
     @Override
     public void run() {
         while (!Thread.interrupted()){
+            if(BattleGround.gameIsPaused)
+                return;
             Random rand = new Random();
             this.moveoffset(1,0);
             try {
