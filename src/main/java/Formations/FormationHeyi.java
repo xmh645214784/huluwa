@@ -5,20 +5,23 @@ import Position.PositionInterface;
 import Position.TwoDimePositionSet;
 import Settings.Settings;
 
+import java.util.List;
 import java.util.Set;
 
 public class FormationHeyi implements FormationChanger {
-    static public void changFormation(PositionInterface startPos, Creature... toBeArrangeCreatures) {
+    static public void changFormation(PositionInterface startPos,List<?extends Creature> toBeArrangeCreatures) {
         int i=startPos.getValue()[0],j=startPos.getValue()[1];
+        int count=0;
         for (Creature each:toBeArrangeCreatures)
         {
             each.setPosition(
-                    TwoDimePositionSet.getPositionInterface(j,i+3));
-            i++;
-            if(i<= Settings.getInstance().getNR_LOLOS()/2)
-                j--;
+                    TwoDimePositionSet.getPositionInterface(i,j));
+            j++;
+            if(count< toBeArrangeCreatures.size()/2)
+                i--;
             else
-                j++;
+                i++;
+            count++;
         }
     }
 }

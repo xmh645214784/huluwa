@@ -27,7 +27,7 @@ public class TwoDimePositionSet {
     public static PositionInterface getPositionInterface(int x,int y){
             if(isOutOfBound(x,y))
                 return null;
-            return positionInterfaces.get(y*NRY+x);
+            return positionInterfaces.get(y*NRX+x);
     }
 
     public static boolean isOutOfBound(int x,int y) {

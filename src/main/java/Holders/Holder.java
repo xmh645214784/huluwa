@@ -15,7 +15,8 @@ public class Holder {
     public Holder(Image image, PositionInterface position) {
         this.image = image;
         this.position = position;
-        position.setHolder(this);
+        if(position!=null)
+            position.setHolder(this);
     }
 
     public PositionInterface getPosition() {

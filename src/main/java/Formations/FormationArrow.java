@@ -5,10 +5,12 @@ import Position.PositionInterface;
 import Position.TwoDimePositionSet;
 import Settings.Settings;
 
+import java.util.List;
+
 public class FormationArrow implements FormationChanger{
 
 
-    static public void changFormation(PositionInterface startPos, Creature... toBeArrangeCreatures) {
+    static public void changFormation(PositionInterface startPos,  List<?extends Creature> toBeArrangeCreatures) {
         int count=0;
 //        int i=4,j=5;
         int i=startPos.getValue()[0];//4

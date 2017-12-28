@@ -1,6 +1,7 @@
 package BattleGround;
 
 import Formations.FormationArrow;
+import Formations.FormationHeyi;
 import Holders.Creatures.Bad.Lolo;
 import Holders.Creatures.Bad.Scorpion;
 import Holders.Creatures.Bad.Snake;
@@ -36,9 +37,8 @@ public class TwoDimeBattleGround extends BattleGround {
         for(int i=0;i<Settings.getInstance().getNR_LOLOS();i++)
             addCreatures(creatureFactory.createCreature(Lolo.class,null));
 
-        FormationArrow.changFormation(
-                TwoDimePositionSet.getPositionInterface(5,1),
-                (Creature[]) monsters.toArray()
+        FormationHeyi.changFormation(
+                TwoDimePositionSet.getPositionInterface(10,5), monsters
         );
 
     }
