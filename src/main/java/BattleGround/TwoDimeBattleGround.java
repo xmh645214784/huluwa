@@ -1,11 +1,16 @@
 package BattleGround;
 
+import Formations.FormationArrow;
+import Holders.Creatures.Bad.Lolo;
+import Holders.Creatures.Bad.Scorpion;
+import Holders.Creatures.Bad.Snake;
 import Holders.Creatures.Creature;
 import Holders.Creatures.CreatureFactory;
 import Holders.Creatures.Good.Huluwa;
 import Holders.Mountain;
 import Position.PositionInterface;
 import Position.TwoDimePosition;
+import Position.TwoDimePositionSet;
 import Settings.*;
 
 public class TwoDimeBattleGround extends BattleGround {
@@ -25,6 +30,17 @@ public class TwoDimeBattleGround extends BattleGround {
         CreatureFactory creatureFactory = new CreatureFactory();
         for (int i = 0; i < 7; i++)
             addCreatures(creatureFactory.createCreature(Huluwa.class, positionInterfaces.get(i * Settings.getInstance().getNRX())));
+
+        addCreatures(creatureFactory.createCreature(Snake.class,null));
+        addCreatures(creatureFactory.createCreature(Scorpion.class,null));
+        for(int i=0;i<Settings.getInstance().getNR_LOLOS();i++)
+            addCreatures(creatureFactory.createCreature(Lolo.class,null));
+
+        FormationArrow.changFormation(
+                TwoDimePositionSet.getPositionInterface(5,1),
+                (Creature[]) monsters.toArray()
+        );
+
     }
     protected void battle() {
         for(Creature creature:creatures)

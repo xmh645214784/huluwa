@@ -19,7 +19,14 @@ public class Settings {
 
     private Properties properties = new Properties();
 
-    private int NRX, NRY;
+    private int NRX;
+    private int NRY;
+
+    public int getNR_LOLOS() {
+        return NR_LOLOS;
+    }
+
+    private int NR_LOLOS;
 
     private Settings() {
         try {
@@ -38,6 +45,13 @@ public class Settings {
             System.err.println("Configure file error :NRY");
             System.exit(-1);
         }
+        NR_LOLOS=Integer.parseInt(properties.getProperty("NR_LOLOS"));
+        if(NR_LOLOS<0||NR_LOLOS>10) {
+            System.err.println("Configure file error :NR_LOLOS");
+            System.exit(-1);
+        }
+
+
     }
 
     public int getNRX() {
