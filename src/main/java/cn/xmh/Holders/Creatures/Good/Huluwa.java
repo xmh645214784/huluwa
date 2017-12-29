@@ -2,6 +2,7 @@ package cn.xmh.Holders.Creatures.Good;
 
 import cn.xmh.Position.PositionInterface;
 import cn.xmh.Settings.ImagesSet;
+import cn.xmh.Settings.Settings;
 
 public class Huluwa extends Good {
 
@@ -21,7 +22,8 @@ public class Huluwa extends Good {
         super(SENIORITY.getSENIORITY(count).toString(), positionInterface, ImagesSet.HuluwaImage[count]);
         this.color = COLOR.getCOLOR(count);
         this.seniority = SENIORITY.getSENIORITY(count);
-        this.hp=10;
+        this.hp= Settings.getInstance().getHP_OF_HULUWA();
+        this.damage=Settings.getInstance().getDMG_OF_HULUWA();
         count++;
     }
 

@@ -2,15 +2,13 @@ package cn.xmh.BattleGround;
 
 import cn.xmh.Formations.FormationArrow;
 import cn.xmh.Holders.Creatures.Bad.Lolo;
-import cn.xmh.Holders.Creatures.Bad.Monster;
 import cn.xmh.Holders.Creatures.Bad.Scorpion;
 import cn.xmh.Holders.Creatures.Bad.Snake;
 import cn.xmh.Holders.Creatures.Creature;
 import cn.xmh.Holders.Creatures.CreatureFactory;
-import cn.xmh.Holders.Creatures.Good.Good;
 import cn.xmh.Holders.Creatures.Good.Huluwa;
 import cn.xmh.Position.TwoDimePositionSet;
-import cn.xmh.Settings.*;
+import cn.xmh.Settings.Settings;
 
 public class TwoDimeBattleGround extends BattleGround {
     private static TwoDimeBattleGround ourInstance = new TwoDimeBattleGround();
@@ -50,19 +48,12 @@ public class TwoDimeBattleGround extends BattleGround {
 
     @Override
     public synchronized void collisionDetection() {
-        for (int i = 0; i < creatures.size(); i++)
-            for (int j = i + 1; j < creatures.size(); j++) {
-                if (creatures.get(i).getPosition().isNear(creatures.get(j).getPosition())) {
-                    if (creatures.get(i) instanceof Good && creatures.get(j) instanceof Good) {
-                        continue;
-                    } else if (creatures.get(i) instanceof Monster && creatures.get(j) instanceof Monster) {
-                        continue;
-                    } else {//Battle
-                        Creature monster = creatures.get(i) instanceof Monster ? creatures.get(i) : creatures.get(j);
-                        monster.Die();
-                    }
+        for (int i = 0; i < goods.size(); i++)
+            for (int j = 0; j < monsters.size(); j++) {
+                if (goods.get(i).getPosition().isNear(monsters.get(j).getPosition())) {
+                    goods.get(i).setHp(goods.get(i).getHp() - monsters.get(j).getDamage());
+                    monsters.get(j).setHp(monsters.get(j).getHp() - goods.get(i).getDamage());
                 }
             }
     }
-
 }

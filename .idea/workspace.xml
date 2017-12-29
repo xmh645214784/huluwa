@@ -2,35 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5174f679-bd75-4c47-92d5-ac55aaa07bcb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/View/DrawHp.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BattleGround/BattleGround.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/BattleGround/BattleGround.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BattleGround/TwoDimeBattleGround.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/BattleGround/TwoDimeBattleGround.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Formations/FormationArrow.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Formations/FormationArrow.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Formations/FormationChanger.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Formations/FormationChanger.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Formations/FormationHengE.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Formations/FormationHengE.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Formations/FormationHeyi.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Formations/FormationHeyi.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Holders/Creatures/Bad/Lolo.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Lolo.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Holders/Creatures/Bad/Monster.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Monster.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Holders/Creatures/Bad/Scorpion.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Scorpion.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Holders/Creatures/Bad/Snake.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Snake.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Holders/Creatures/Creature.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Creature.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Holders/Creatures/CreatureFactory.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/CreatureFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Holders/Creatures/CreatureFactoryInterface.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/CreatureFactoryInterface.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Holders/Creatures/Good/Good.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Good.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Holders/Creatures/Good/Grandpa.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Grandpa.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Holders/Creatures/Good/Huluwa.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Huluwa.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Holders/Holder.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Holder.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Holders/Mountain.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Mountain.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Position/PositionInterface.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Position/PositionInterface.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Position/TwoDimePosition.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Position/TwoDimePosition.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Position/TwoDimePositionSet.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Position/TwoDimePositionSet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Settings/ImagesSet.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Settings/ImagesSet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Settings/Settings.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Settings/Settings.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Application.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/View/Application.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Board.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/View/Board.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/View.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/View/View.java" />
+      <change beforePath="$PROJECT_DIR$/configure.txt" afterPath="$PROJECT_DIR$/configure.txt" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/BattleGround/BattleGround.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/BattleGround/BattleGround.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/BattleGround/TwoDimeBattleGround.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/BattleGround/TwoDimeBattleGround.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Lolo.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Lolo.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Scorpion.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Scorpion.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Snake.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Snake.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Creature.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Creature.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Grandpa.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Grandpa.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Huluwa.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Huluwa.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/Main.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/Position/TwoDimePositionSet.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Position/TwoDimePositionSet.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/Settings/Settings.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/Settings/Settings.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/View/Application.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/View/Application.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/View/Board.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/View/Board.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,12 +30,144 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="1170">
+              <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwoDimeBattleGround.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/BattleGround/TwoDimeBattleGround.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-480">
+              <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Good.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Good.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BattleGround.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/BattleGround/BattleGround.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="23" column="77" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="77" />
+              <folding>
+                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#733#734#0" expanded="true" />
+                <element signature="e#764#765#0" expanded="true" />
+                <element signature="e#1137#1138#0" expanded="true" />
+                <element signature="e#1178#1179#0" expanded="true" />
+                <element signature="e#1229#1230#0" expanded="true" />
+                <element signature="e#1261#1262#0" expanded="true" />
+                <element signature="e#1712#1713#0" expanded="true" />
+                <element signature="e#1759#1760#0" expanded="true" />
+                <element signature="e#1823#1824#0" expanded="true" />
+                <element signature="e#1861#1862#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Creature.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Creature.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="82" column="18" lean-forward="true" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#440#441#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Huluwa.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Huluwa.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="66" column="13" lean-forward="true" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Settings/Settings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="167" column="29" lean-forward="false" selection-start-line="167" selection-start-column="15" selection-end-line="167" selection-end-column="29" />
+              <folding>
+                <element signature="e#4491#4492#0" expanded="true" />
+                <element signature="e#4517#4518#0" expanded="true" />
+                <element signature="e#4544#4545#0" expanded="true" />
+                <element signature="e#4570#4571#0" expanded="true" />
+                <element signature="e#4615#4616#0" expanded="true" />
+                <element signature="e#4659#4660#0" expanded="true" />
+                <element signature="e#4691#4692#0" expanded="true" />
+                <element signature="e#4722#4723#0" expanded="true" />
+                <element signature="e#4759#4760#0" expanded="true" />
+                <element signature="e#4795#4796#0" expanded="true" />
+                <element signature="e#4831#4832#0" expanded="true" />
+                <element signature="e#4866#4867#0" expanded="true" />
+                <element signature="e#4904#4905#0" expanded="true" />
+                <element signature="e#4941#4942#0" expanded="true" />
+                <element signature="e#4978#4979#0" expanded="true" />
+                <element signature="e#5014#5015#0" expanded="true" />
+                <element signature="e#5050#5051#0" expanded="true" />
+                <element signature="e#5085#5086#0" expanded="true" />
+                <element signature="e#5120#5121#0" expanded="true" />
+                <element signature="e#5154#5155#0" expanded="true" />
+                <element signature="e#5193#5194#0" expanded="true" />
+                <element signature="e#5231#5232#0" expanded="true" />
+                <element signature="e#5269#5270#0" expanded="true" />
+                <element signature="e#5306#5307#0" expanded="true" />
+                <element signature="e#5341#5342#0" expanded="true" />
+                <element signature="e#5375#5376#0" expanded="true" />
+                <element signature="e#5408#5409#0" expanded="true" />
+                <element signature="e#5441#5442#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,21 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Creatures/Huluwa.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Creatures/CreatureFactoryInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Creatures/CreatureFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Resource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Setting.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Settings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Creatures/Bad/Lolo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Creatures/Good/Huluwa.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Creatures/Good/Grandpa.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Creatures/Bad/Scorpion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Creatures/Bad/Snake.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Creatures/Good/Good.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Creatures/Bad/Monster.java" />
-        <option value="$PROJECT_DIR$/src/main/java/View/ViewJPannel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/View/ViewJPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/Creatures/Creature.java" />
         <option value="$PROJECT_DIR$/src/main/java/View/View.java" />
         <option value="$PROJECT_DIR$/src/main/java/Holders/Land.java" />
@@ -129,12 +233,27 @@
         <option value="$PROJECT_DIR$/src/main/java/Holders/Creatures/Creature.java" />
         <option value="$PROJECT_DIR$/src/main/java/Holders/Creatures/Good/Grandpa.java" />
         <option value="$PROJECT_DIR$/src/main/java/Holders/Creatures/Good/Good.java" />
-        <option value="$PROJECT_DIR$/configure.txt" />
         <option value="$PROJECT_DIR$/src/main/java/BattleGround/TwoDimeBattleGround.java" />
         <option value="$PROJECT_DIR$/src/main/java/Settings/Settings.java" />
         <option value="$PROJECT_DIR$/src/main/java/View/MainForm.form" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/View/MainWin.form" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/View/MainForm.form" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/View/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/View/Board.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/View/DrawHp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Scorpion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Snake.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Grandpa.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Huluwa.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/Settings/Settings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Lolo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/BattleGround/TwoDimeBattleGround.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Good.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Creature.java" />
+        <option value="$PROJECT_DIR$/configure.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/BattleGround/BattleGround.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/Position/TwoDimePositionSet.java" />
       </list>
     </option>
   </component>
@@ -145,8 +264,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="283" />
-    <option name="y" value="53" />
+    <option name="x" value="341" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -215,6 +333,36 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xmh" type="462c0819:PsiDirectoryNode" />
+              <item name="Holders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="huluwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="huluwa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xmh" type="462c0819:PsiDirectoryNode" />
+              <item name="Holders" type="462c0819:PsiDirectoryNode" />
+              <item name="Creatures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="huluwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="huluwa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xmh" type="462c0819:PsiDirectoryNode" />
+              <item name="Holders" type="462c0819:PsiDirectoryNode" />
+              <item name="Creatures" type="462c0819:PsiDirectoryNode" />
+              <item name="Bad" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="huluwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="huluwa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xmh" type="462c0819:PsiDirectoryNode" />
               <item name="Settings" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -225,6 +373,13 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xmh" type="462c0819:PsiDirectoryNode" />
               <item name="View" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="huluwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="huluwa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -405,7 +560,7 @@
       <workItem from="1514462951049" duration="825000" />
       <workItem from="1514468330979" duration="7264000" />
       <workItem from="1514520808090" duration="2772000" />
-      <workItem from="1514532642816" duration="10723000" />
+      <workItem from="1514532642816" duration="17189000" />
     </task>
     <task id="LOCAL-00001" summary="add creaturefactory">
       <created>1514378843659</created>
@@ -432,39 +587,39 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53347000" />
+    <option name="totallyTimeSpent" value="59813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266385" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.50208336" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297055" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32769555" sideWeight="0.49791667" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20104167" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266385" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297055" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2706131" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20104167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34355178" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34355178" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,8 +643,14 @@
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Creature.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -549,12 +710,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Creatures/TwoDimensionBattleGround.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/BattleGround.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/Sorter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/Comparable.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/InsertionSorter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/RandomNumArray.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Common/BubbleSorter.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/TwoDimensionBattleGround.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/View/PlainTextView.java" />
@@ -665,18 +820,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Position/TwoDimePositionSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#335#336#0" expanded="false" />
-            <element signature="e#376#377#0" expanded="false" />
-            <element signature="e#446#465#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/jdk9.0.1/lib/src.zip!/java.desktop/javax/swing/JComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81690">
@@ -689,42 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180390">
           <caret line="6355" column="0" lean-forward="false" selection-start-line="6355" selection-start-column="0" selection-end-line="6355" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/BattleGround/BattleGround.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="61" column="29" lean-forward="false" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-          <folding>
-            <element signature="e#619#620#0" expanded="false" />
-            <element signature="e#647#648#0" expanded="false" />
-            <element signature="e#696#697#0" expanded="false" />
-            <element signature="e#727#728#0" expanded="false" />
-            <element signature="e#1099#1100#0" expanded="false" />
-            <element signature="e#1131#1132#0" expanded="false" />
-            <element signature="e#1582#1583#0" expanded="false" />
-            <element signature="e#1629#1630#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <element signature="e#220#221#0" expanded="false" />
-            <element signature="e#244#245#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Snake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -779,25 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Creature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding>
-            <element signature="e#516#517#0" expanded="false" />
-            <element signature="e#552#553#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Huluwa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/View/MainForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -811,81 +899,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Scorpion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Lolo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Monster.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Settings/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-          <folding>
-            <element signature="e#494#495#0" expanded="false" />
-            <element signature="e#538#539#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configure.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Grandpa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Good.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/BattleGround/TwoDimeBattleGround.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-          <folding>
-            <element signature="e#685#686#0" expanded="false" />
-            <element signature="e#719#720#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -910,11 +928,222 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/MainWin.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/MainWin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/MainForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/MainForm.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jrt://E:/jdk9.0.1!/java.base/sun/security/ssl/ServerNameExtension.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Scorpion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="17" column="59" lean-forward="false" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Grandpa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Settings/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="167" column="29" lean-forward="false" selection-start-line="167" selection-start-column="15" selection-end-line="167" selection-end-column="29" />
+          <folding>
+            <element signature="e#4491#4492#0" expanded="true" />
+            <element signature="e#4517#4518#0" expanded="true" />
+            <element signature="e#4544#4545#0" expanded="true" />
+            <element signature="e#4570#4571#0" expanded="true" />
+            <element signature="e#4615#4616#0" expanded="true" />
+            <element signature="e#4659#4660#0" expanded="true" />
+            <element signature="e#4691#4692#0" expanded="true" />
+            <element signature="e#4722#4723#0" expanded="true" />
+            <element signature="e#4759#4760#0" expanded="true" />
+            <element signature="e#4795#4796#0" expanded="true" />
+            <element signature="e#4831#4832#0" expanded="true" />
+            <element signature="e#4866#4867#0" expanded="true" />
+            <element signature="e#4904#4905#0" expanded="true" />
+            <element signature="e#4941#4942#0" expanded="true" />
+            <element signature="e#4978#4979#0" expanded="true" />
+            <element signature="e#5014#5015#0" expanded="true" />
+            <element signature="e#5050#5051#0" expanded="true" />
+            <element signature="e#5085#5086#0" expanded="true" />
+            <element signature="e#5120#5121#0" expanded="true" />
+            <element signature="e#5154#5155#0" expanded="true" />
+            <element signature="e#5193#5194#0" expanded="true" />
+            <element signature="e#5231#5232#0" expanded="true" />
+            <element signature="e#5269#5270#0" expanded="true" />
+            <element signature="e#5306#5307#0" expanded="true" />
+            <element signature="e#5341#5342#0" expanded="true" />
+            <element signature="e#5375#5376#0" expanded="true" />
+            <element signature="e#5408#5409#0" expanded="true" />
+            <element signature="e#5441#5442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Lolo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Huluwa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="66" column="13" lean-forward="true" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Good/Good.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/BattleGround/TwoDimeBattleGround.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/DrawHp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Creature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="82" column="18" lean-forward="true" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configure.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/Position/TwoDimePositionSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/BattleGround/BattleGround.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="23" column="77" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="77" />
+          <folding>
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1229#1230#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
+            <element signature="e#1759#1760#0" expanded="true" />
+            <element signature="e#1823#1824#0" expanded="true" />
+            <element signature="e#1861#1862#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

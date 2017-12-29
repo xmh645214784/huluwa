@@ -2,6 +2,7 @@ package cn.xmh.View;
 
 import cn.xmh.BattleGround.BattleGround;
 import cn.xmh.BattleGround.TwoDimeBattleGround;
+import cn.xmh.Holders.Creatures.Creature;
 import cn.xmh.Holders.Holder;
 import cn.xmh.Position.PositionInterface;
 import cn.xmh.Settings.ImagesSet;
@@ -14,6 +15,7 @@ import java.awt.event.KeyEvent;
 import java.util.List;
 
 public class Board extends JPanel implements View {
+    final int OFFSET=50;
     public Board() {
         addKeyListener(new TAdapter());
         setFocusable(true);
@@ -37,11 +39,12 @@ public class Board extends JPanel implements View {
         int nry = Settings.getInstance().getNRY();
         for (int j = 0; j < nry; j++)
             for (int i = 0; i < nrx; i++) {
-                g.drawImage(ImagesSet.GroundImage, 47 * i, 47 * j, this);
+                g.drawImage(ImagesSet.GroundImage, OFFSET+46 * i, OFFSET+46 * j, this);
                 Holder holder = positionInterfaces.get(j * nry + i).getHolder();
                 if (holder != null)
-                    g.drawImage(holder.getImage(), 47 * i, 47 * j, this);
-                
+                    g.drawImage(holder.getImage(), OFFSET+46 * i, OFFSET+46 * j, this);
+                if(holder instanceof Creature)
+                    DrawHp.draw(g,OFFSET+46*i,OFFSET+46*j,((Creature) holder).getHp());
             }
     }
 

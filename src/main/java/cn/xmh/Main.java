@@ -9,6 +9,7 @@ public class Main {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 Application ex = new Application();
+                ex.setSize(700,700);
                 ex.setVisible(true);
             }
         });

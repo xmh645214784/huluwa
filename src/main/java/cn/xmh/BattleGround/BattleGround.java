@@ -8,24 +8,22 @@ import cn.xmh.Position.PositionInterface;
 import cn.xmh.Position.TwoDimePositionSet;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 abstract public class BattleGround {
     public static volatile boolean gameIsPaused = false;
-    public static boolean gameIsStart =false;
-    static protected List<PositionInterface> positionInterfaces = TwoDimePositionSet.getPositionInterfaces();
-
+    public static volatile boolean gameIsStart =false;
+    protected static List<PositionInterface> positionInterfaces = TwoDimePositionSet.getPositionInterfaces();
     public static List<Good> getGoods() {
         return goods;
     }
-
     public static List<Monster> getMonsters() {
         return monsters;
     }
-
-    static protected List<Creature> creatures = new ArrayList<Creature>();
-    static protected List<Good> goods = new ArrayList<Good>();
-    static protected List<Monster> monsters = new ArrayList<Monster>();
+    static protected List<Creature> creatures =  Collections.synchronizedList(new ArrayList<Creature>());
+    static protected List<Good> goods =  Collections.synchronizedList(new ArrayList<Good>());
+    static protected  List<Monster> monsters =  Collections.synchronizedList(new ArrayList<Monster>());
 
     static public List<PositionInterface> getPositionInterfaces() {
         return positionInterfaces;

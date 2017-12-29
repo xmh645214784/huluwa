@@ -3,6 +3,7 @@ package cn.xmh.Position;
 import cn.xmh.Settings.Settings;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class TwoDimePositionSet {
@@ -14,7 +15,7 @@ public class TwoDimePositionSet {
         return positionInterfaces;
     }
 
-    static List<PositionInterface> positionInterfaces=new ArrayList<PositionInterface>();
+    static List<PositionInterface> positionInterfaces= Collections.synchronizedList(new ArrayList<PositionInterface>());
 
    static {
        for (int j = 0; j < Settings.getInstance().getNRY(); j++)

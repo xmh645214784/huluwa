@@ -12,7 +12,22 @@ import java.awt.*;
 
 abstract public class Creature extends Holder implements Runnable {
 
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+        if(hp<=0)
+            Die();
+    }
+
     protected int hp = 0;
+
+    public int getDamage() {
+        return damage;
+    }
+
     protected int damage = 0;
 
 
@@ -59,7 +74,7 @@ abstract public class Creature extends Holder implements Runnable {
     abstract public void run();
 
     public void Die() {
-        System.out.println(this.getClass().getSimpleName());
+        System.err.println(this.getClass().getSimpleName());
         hp = 0;
         this.getPosition().setHolder(null);
         System.err.println(this.getPosition().toString());
@@ -70,7 +85,7 @@ abstract public class Creature extends Holder implements Runnable {
             BattleGround.getMonsters().remove(this);
         else
             assert false;
-        this.getThread().interrupt();
+        this.getThread().stop();
     }
 
 
@@ -87,7 +102,9 @@ abstract public class Creature extends Holder implements Runnable {
                 TwoDimeBattleGround.getInstance().collisionDetection();
                 return true;
             }
-        }
         return false;
+        }
     }
+
+
 }

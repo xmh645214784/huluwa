@@ -2,6 +2,7 @@ package cn.xmh.Holders.Creatures.Bad;
 
 import cn.xmh.Position.PositionInterface;
 import cn.xmh.Settings.ImagesSet;
+import cn.xmh.Settings.Settings;
 
 public class Scorpion extends Monster {
     private static Scorpion ourInstance ;
@@ -14,6 +15,8 @@ public class Scorpion extends Monster {
 
     private Scorpion(PositionInterface positionInterface) {
         super("蝎",positionInterface, ImagesSet.ScorpionImage);
+        damage=Settings.getInstance().getDMG_OF_SCORPION();
+        hp= Settings.getInstance().getHP_OF_SCORPION();
     }
 
 
