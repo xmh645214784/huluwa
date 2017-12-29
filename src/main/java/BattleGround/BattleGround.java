@@ -6,7 +6,6 @@ import Holders.Creatures.Good.Good;
 import Holders.Holder;
 import Position.PositionInterface;
 import Position.TwoDimePositionSet;
-import Settings.Settings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +14,15 @@ abstract public class BattleGround {
     public static volatile boolean gameIsPaused = false;
     public static boolean gameIsStart =false;
     static protected List<PositionInterface> positionInterfaces = TwoDimePositionSet.getPositionInterfaces();
+
+    public static List<Good> getGoods() {
+        return goods;
+    }
+
+    public static List<Monster> getMonsters() {
+        return monsters;
+    }
+
     static protected List<Creature> creatures = new ArrayList<Creature>();
     static protected List<Good> goods = new ArrayList<Good>();
     static protected List<Monster> monsters = new ArrayList<Monster>();
@@ -50,5 +58,7 @@ abstract public class BattleGround {
 
     //the battle processing
     protected abstract void battle();
+
+    public abstract boolean collisionDetection();
 
 }

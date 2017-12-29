@@ -1,12 +1,30 @@
 package Holders.Creatures.Good;
 
+import BattleGround.BattleGround;
 import Holders.Creatures.Creature;
 import Position.PositionInterface;
 
 import java.awt.*;
+import java.util.Random;
 
 public abstract class Good extends Creature {
-    Good(String name, PositionInterface position,Image image) {
+    @Override
+    public void run() {
+        while (!Thread.interrupted()){
+            if(BattleGround.gameIsPaused)
+                return;
+            Random rand = new Random();
+            this.moveoffset(1,0);
+            try {
+                Thread.sleep(rand.nextInt(1000) + 1000);
+            } catch (Exception e) {
+
+            }
+        }
+        moveoffset(1,0);
+    }
+
+    Good(String name, PositionInterface position, Image image) {
         super(name, position,image);
     }
 }

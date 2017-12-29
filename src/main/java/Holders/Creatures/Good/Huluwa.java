@@ -24,23 +24,8 @@ public class Huluwa extends Good {
         super(SENIORITY.getSENIORITY(count).toString(), positionInterface, ImagesSet.HuluwaImage[count]);
         this.color = COLOR.getCOLOR(count);
         this.seniority = SENIORITY.getSENIORITY(count);
+        this.hp=10;
         count++;
-    }
-
-    @Override
-    public void run() {
-        while (!Thread.interrupted()){
-            if(BattleGround.gameIsPaused)
-                return;
-            Random rand = new Random();
-            this.moveoffset(1,0);
-            try {
-                Thread.sleep(rand.nextInt(1000) + 1000);
-            } catch (Exception e) {
-
-            }
-        }
-        moveoffset(1,0);
     }
 
     public enum COLOR {

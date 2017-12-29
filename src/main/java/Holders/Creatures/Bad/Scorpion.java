@@ -20,7 +20,5 @@ public class Scorpion extends Monster {
 
     @Override
     public void run(){
-        if(BattleGround.gameIsPaused)
-            return;;
     }
 }

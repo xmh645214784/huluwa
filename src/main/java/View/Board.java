@@ -42,6 +42,7 @@ public class Board extends JPanel implements View {
                 Holder holder = positionInterfaces.get(j * nry + i).getHolder();
                 if (holder != null)
                     g.drawImage(holder.getImage(), 47 * i, 47 * j, this);
+                
             }
     }
 
@@ -57,24 +58,6 @@ public class Board extends JPanel implements View {
                     return;
                 }
                 BattleGround.gameIsPaused=!BattleGround.gameIsPaused;
-//                if(BattleGround.gameIsPaused)
-//                {
-//                    List<Creature> creatures=TwoDimeBattleGround.getCreatures();
-//                    for(Creature temp:creatures) {
-//                        try {
-//                            temp.getThread().wait();
-//                        } catch (InterruptedException e1) {
-//                            e1.printStackTrace();
-//                        }
-//                    }
-//                }
-//                else {
-//                    List<Creature> creatures=TwoDimeBattleGround.getCreatures();
-//                    for(Creature temp:creatures)
-//                    {
-//                        temp.getThread().notify();
-//                    }
-//                }
             }
         }
     }

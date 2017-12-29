@@ -24,7 +24,5 @@ public class Snake extends Monster {
 
     @Override
     public void run() {
-        if(BattleGround.gameIsPaused)
-            return;
     }
 }

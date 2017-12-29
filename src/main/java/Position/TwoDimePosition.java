@@ -17,6 +17,11 @@ public class TwoDimePosition implements PositionInterface{
         return holder;
     }
 
+    @Override
+    public String toString() {
+        return "("+x+","+y+")";
+    }
+
     public void setHolder(Holder holder) {
         this.holder=holder;
     }

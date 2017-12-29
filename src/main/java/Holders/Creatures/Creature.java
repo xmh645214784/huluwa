@@ -1,14 +1,20 @@
 package Holders.Creatures;
 
+import BattleGround.BattleGround;
 import BattleGround.TwoDimeBattleGround;
+import Holders.Creatures.Bad.Monster;
+import Holders.Creatures.Good.Good;
 import Holders.Holder;
 import Position.PositionInterface;
-import Position.TwoDimePosition;
 import Position.TwoDimePositionSet;
 
 import java.awt.*;
 
 abstract public class Creature extends Holder implements Runnable {
+
+    protected int hp =0;
+    protected int damage=0;
+
 
     public void setThread(Thread thread) {
         this.thread = thread;
@@ -52,14 +58,41 @@ abstract public class Creature extends Holder implements Runnable {
 
     abstract public void run();
 
+    public void Die(){
+        System.out.println(this.getClass().getSimpleName());
+        hp =0;
+        this.getPosition().setHolder(null);
+        System.out.println(this.getPosition().toString());
+        BattleGround.getCreatures().remove(this);
+        if(this instanceof Good)
+            BattleGround.getGoods().remove(this);
+        else if(this instanceof Monster)
+            BattleGround.getMonsters().remove(this);
+        else
+            assert false;
+        this.getThread().interrupt();
+    }
+
+
     public void moveoffset(int offsetx, int offsety) {
-        int[] nowPos = this.getPosition().getValue();
+        PositionInterface oldPostion=this.getPosition();
+        int[] nowPos = oldPostion.getValue();
 
         nowPos[0] += offsetx;
         nowPos[1] += offsety;
         PositionInterface newpos= TwoDimePositionSet.getPositionInterface(nowPos[0], nowPos[1]);
-        if (newpos!= null) {
-            setPosition(newpos);
+        //attempt to move
+        this.position=newpos;
+        if (newpos!= null&&TwoDimeBattleGround.getInstance().collisionDetection()) {
+            if(this.hp<=0)//TODO check if this mover has died
+                ;
+            else{
+                this.position=oldPostion;
+                setPosition(newpos);
+            }
+
         }
+        else
+            this.position=oldPostion;
     }
 }
