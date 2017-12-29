@@ -12,7 +12,7 @@ public abstract class Good extends Creature {
     public void run() {
         while (!Thread.interrupted()){
             if(BattleGround.gameIsPaused)
-                return;
+                continue;
             Random rand = new Random();
             this.moveoffset(1,0);
             try {
@@ -21,7 +21,6 @@ public abstract class Good extends Creature {
 
             }
         }
-        moveoffset(1,0);
     }
 
     Good(String name, PositionInterface position, Image image) {

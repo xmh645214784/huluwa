@@ -12,8 +12,8 @@ import java.awt.*;
 
 abstract public class Creature extends Holder implements Runnable {
 
-    protected int hp =0;
-    protected int damage=0;
+    protected int hp = 0;
+    protected int damage = 0;
 
 
     public void setThread(Thread thread) {
@@ -58,15 +58,15 @@ abstract public class Creature extends Holder implements Runnable {
 
     abstract public void run();
 
-    public void Die(){
+    public void Die() {
         System.out.println(this.getClass().getSimpleName());
-        hp =0;
+        hp = 0;
         this.getPosition().setHolder(null);
-        System.out.println(this.getPosition().toString());
+        System.err.println(this.getPosition().toString());
         BattleGround.getCreatures().remove(this);
-        if(this instanceof Good)
+        if (this instanceof Good)
             BattleGround.getGoods().remove(this);
-        else if(this instanceof Monster)
+        else if (this instanceof Monster)
             BattleGround.getMonsters().remove(this);
         else
             assert false;
@@ -74,25 +74,20 @@ abstract public class Creature extends Holder implements Runnable {
     }
 
 
-    public void moveoffset(int offsetx, int offsety) {
-        PositionInterface oldPostion=this.getPosition();
+    public boolean moveoffset(int offsetx, int offsety) {
+        PositionInterface oldPostion = this.getPosition();
         int[] nowPos = oldPostion.getValue();
 
         nowPos[0] += offsetx;
         nowPos[1] += offsety;
-        PositionInterface newpos= TwoDimePositionSet.getPositionInterface(nowPos[0], nowPos[1]);
-        //attempt to move
-        this.position=newpos;
-        if (newpos!= null&&TwoDimeBattleGround.getInstance().collisionDetection()) {
-            if(this.hp<=0)//TODO check if this mover has died
-                ;
-            else{
-                this.position=oldPostion;
-                setPosition(newpos);
+        synchronized (TwoDimePositionSet.class) {
+            PositionInterface newpos = TwoDimePositionSet.getPositionInterface(nowPos[0], nowPos[1]);
+            if (newpos != null && newpos.getHolder() == null) {
+                this.setPosition(newpos);
+                TwoDimeBattleGround.getInstance().collisionDetection();
+                return true;
             }
-
         }
-        else
-            this.position=oldPostion;
+        return false;
     }
 }

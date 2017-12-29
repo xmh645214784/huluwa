@@ -2,6 +2,7 @@ package Position;
 
 import Holders.Creatures.Creature;
 import Holders.Holder;
+import Settings.Settings;
 
 public class TwoDimePosition implements PositionInterface{
     private int x, y;
@@ -20,6 +21,18 @@ public class TwoDimePosition implements PositionInterface{
     @Override
     public String toString() {
         return "("+x+","+y+")";
+    }
+
+    @Override
+    public boolean isNear(PositionInterface other) {
+        int[] xy2=other.getValue();
+        int x2=xy2[0];
+        int y2=xy2[1];
+        if(Math.abs(x2-x)<=Settings.getInstance().getDISTANCE_OF_ENCOUNTER()
+                &&Math.abs(y2-y)<=Settings.getInstance().getDISTANCE_OF_ENCOUNTER()){
+            return true;
+        }
+        return false;
     }
 
     public void setHolder(Holder holder) {

@@ -59,6 +59,6 @@ abstract public class BattleGround {
     //the battle processing
     protected abstract void battle();
 
-    public abstract boolean collisionDetection();
+    public abstract void collisionDetection();
 
 }

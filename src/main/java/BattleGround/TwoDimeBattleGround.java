@@ -36,7 +36,7 @@ public class TwoDimeBattleGround extends BattleGround {
             addCreatures(creatureFactory.createCreature(Lolo.class, null));
 
         FormationArrow.changFormation(
-                TwoDimePositionSet.getPositionInterface(10, 5), monsters
+                TwoDimePositionSet.getPositionInterface(5, 2), monsters
         );
 
     }
@@ -49,24 +49,20 @@ public class TwoDimeBattleGround extends BattleGround {
     }
 
     @Override
-    public synchronized boolean collisionDetection() {
+    public synchronized void collisionDetection() {
         for (int i = 0; i < creatures.size(); i++)
             for (int j = i + 1; j < creatures.size(); j++) {
-                if (creatures.get(i).getPosition().equals(creatures.get(j).getPosition())) {
+                if (creatures.get(i).getPosition().isNear(creatures.get(j).getPosition())) {
                     if (creatures.get(i) instanceof Good && creatures.get(j) instanceof Good) {
-                        return false;
-                    }
-                    else if(creatures.get(i) instanceof Monster && creatures.get(j) instanceof Monster){
-                        return false;
-                    }
-                    else {
-                        Creature monster=creatures.get(i) instanceof Monster?creatures.get(j):creatures.get(i);
+                        continue;
+                    } else if (creatures.get(i) instanceof Monster && creatures.get(j) instanceof Monster) {
+                        continue;
+                    } else {//Battle
+                        Creature monster = creatures.get(i) instanceof Monster ? creatures.get(i) : creatures.get(j);
                         monster.Die();
-                        return true;//TODO check if this mover has died
                     }
                 }
             }
-        return true;
     }
 
 }

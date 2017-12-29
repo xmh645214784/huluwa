@@ -22,6 +22,12 @@ public class Settings {
     private int NRX;
     private int NRY;
 
+    public int getDISTANCE_OF_ENCOUNTER() {
+        return DISTANCE_OF_ENCOUNTER;
+    }
+
+    private int DISTANCE_OF_ENCOUNTER;
+
     public int getNR_LOLOS() {
         return NR_LOLOS;
     }
@@ -36,12 +42,12 @@ public class Settings {
             e.printStackTrace();
         }
         NRX = Integer.parseInt(properties.getProperty("NRX"));
-        if (NRX < 2 || NRX > 100) {
+        if (NRX < 10 || NRX > 100) {
             System.err.println("Configure file error :NRX");
             System.exit(-1);
         }
         NRY = Integer.parseInt(properties.getProperty("NRY"));
-        if (NRY < 7 || NRY > 100) {
+        if (NRY < 10 || NRY > 100) {
             System.err.println("Configure file error :NRY");
             System.exit(-1);
         }
@@ -51,6 +57,7 @@ public class Settings {
             System.exit(-1);
         }
 
+        DISTANCE_OF_ENCOUNTER=Integer.parseInt(properties.getProperty("DISTANCE_OF_ENCOUNTER"));
 
     }
 

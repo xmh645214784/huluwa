@@ -7,4 +7,5 @@ public interface PositionInterface {
     void setHolder(Holder holder);
     int[] getValue();
     String toString();
+    boolean isNear(PositionInterface other);
 }

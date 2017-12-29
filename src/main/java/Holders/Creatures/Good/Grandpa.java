@@ -22,10 +22,4 @@ public class Grandpa extends Good {
         System.out.println(mName +"@"+this.position.toString());
     }
 
-
-    @Override
-    public void run() {
-        if(BattleGround.gameIsPaused)
-            return;
-    }
 }
