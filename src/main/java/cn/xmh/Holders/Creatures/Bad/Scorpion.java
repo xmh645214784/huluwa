@@ -19,8 +19,4 @@ public class Scorpion extends Monster {
         hp= Settings.getInstance().getHP_OF_SCORPION();
     }
 
-
-    @Override
-    public void run(){
-    }
 }

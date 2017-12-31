@@ -14,6 +14,7 @@ import java.util.List;
 abstract public class BattleGround {
     public static volatile boolean gameIsPaused = false;
     public static volatile boolean gameIsStart =false;
+    public static volatile boolean gameIsEnd=false;
     protected static List<PositionInterface> positionInterfaces = TwoDimePositionSet.getPositionInterfaces();
     public static List<Good> getGoods() {
         return goods;
@@ -37,9 +38,12 @@ abstract public class BattleGround {
         for (Creature each : creatures) {
             this.creatures.add(each);
             if(each instanceof Good)
-                goods.add((Good) each);
+                synchronized (goods){
+                goods.add((Good) each);}
             else if(each instanceof Monster)
-                monsters.add((Monster) each);
+                synchronized (monsters) {
+                    monsters.add((Monster) each);
+                }
             else
                 throw new RuntimeException("You add what?");
         }

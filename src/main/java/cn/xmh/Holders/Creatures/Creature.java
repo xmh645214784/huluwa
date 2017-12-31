@@ -12,37 +12,14 @@ import java.awt.*;
 
 abstract public class Creature extends Holder implements Runnable {
 
-    public int getHp() {
-        return hp;
-    }
-
-    public void setHp(int hp) {
-        this.hp = hp;
-        if(hp<=0)
-            Die();
-    }
-
     protected int hp = 0;
 
-    public int getDamage() {
-        return damage;
-    }
-
     protected int damage = 0;
-
-
-    public void setThread(Thread thread) {
-        this.thread = thread;
-    }
-
-    public Thread getThread() {
-
-        return thread;
-    }
 
     private Thread thread;
 
     protected String mName;
+
 
     public String getmName() {
         return mName;
@@ -79,32 +56,66 @@ abstract public class Creature extends Holder implements Runnable {
         this.getPosition().setHolder(null);
         System.err.println(this.getPosition().toString());
         BattleGround.getCreatures().remove(this);
-        if (this instanceof Good)
-            BattleGround.getGoods().remove(this);
-        else if (this instanceof Monster)
-            BattleGround.getMonsters().remove(this);
-        else
+        if (this instanceof Good) {
+            synchronized (BattleGround.getGoods()) {
+                BattleGround.getGoods().remove(this);
+                if (BattleGround.getGoods().size() == 0)
+                    BattleGround.gameIsEnd = true;
+            }
+
+        } else if (this instanceof Monster) {
+            synchronized (BattleGround.getMonsters()) {
+                BattleGround.getMonsters().remove(this);
+                if (BattleGround.getMonsters().size() == 0)
+                    BattleGround.gameIsEnd = true;
+            }
+        } else
             assert false;
         this.getThread().stop();
     }
 
 
-    public boolean moveoffset(int offsetx, int offsety) {
+    public synchronized boolean moveoffset(int offsetx, int offsety) {
         PositionInterface oldPostion = this.getPosition();
         int[] nowPos = oldPostion.getValue();
 
         nowPos[0] += offsetx;
         nowPos[1] += offsety;
-        synchronized (TwoDimePositionSet.class) {
-            PositionInterface newpos = TwoDimePositionSet.getPositionInterface(nowPos[0], nowPos[1]);
-            if (newpos != null && newpos.getHolder() == null) {
-                this.setPosition(newpos);
-                TwoDimeBattleGround.getInstance().collisionDetection();
-                return true;
-            }
-        return false;
+        PositionInterface newpos = TwoDimePositionSet.getPositionInterface(nowPos[0], nowPos[1]);
+        if (newpos != null && newpos.getHolder() == null) {
+            this.setPosition(newpos);
+            TwoDimeBattleGround.getInstance().collisionDetection();
+            //TODO save
+            return true;
         }
+        return false;
+
     }
 
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
+    public void setThread(Thread thread) {
+        this.thread = thread;
+    }
+
+    public Thread getThread() {
+
+        return thread;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public void checkIfDie(){
+        if(hp<=0)
+            Die();
+    }
 
 }

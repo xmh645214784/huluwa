@@ -16,10 +16,4 @@ public class Lolo extends Monster  {
         damage=Settings.getInstance().getDMG_OF_LOLO();
     }
 
-    @Override
-    public void run(){
-        if(BattleGround.gameIsPaused)
-            return;
-        ;//小人物，哪那么多屁话
-    }
 }

@@ -24,7 +24,4 @@ public class Snake extends Monster {
         return mName;
     }
 
-    @Override
-    public void run() {
-    }
 }

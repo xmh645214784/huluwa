@@ -48,12 +48,20 @@ public class TwoDimeBattleGround extends BattleGround {
 
     @Override
     public synchronized void collisionDetection() {
-        for (int i = 0; i < goods.size(); i++)
-            for (int j = 0; j < monsters.size(); j++) {
-                if (goods.get(i).getPosition().isNear(monsters.get(j).getPosition())) {
-                    goods.get(i).setHp(goods.get(i).getHp() - monsters.get(j).getDamage());
-                    monsters.get(j).setHp(monsters.get(j).getHp() - goods.get(i).getDamage());
-                }
+        synchronized (goods) {
+            synchronized (monsters) {
+                for (int i = 0; i < goods.size(); i++)
+                    for (int j = 0; j < monsters.size(); j++) {
+                        if (goods.get(i).getPosition().isNear(monsters.get(j).getPosition())) {
+                            goods.get(i).setHp(goods.get(i).getHp() - monsters.get(j).getDamage());
+                            monsters.get(j).setHp(monsters.get(j).getHp() - goods.get(i).getDamage());
+                        }
+                    }
+                for (int i = 0; i < goods.size(); i++)
+                    goods.get(i).checkIfDie();
+                for(int i=0;i<monsters.size();i++)
+                    monsters.get(i).checkIfDie();
             }
+        }
     }
 }
