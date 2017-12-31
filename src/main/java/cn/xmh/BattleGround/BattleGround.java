@@ -13,18 +13,21 @@ import java.util.List;
 
 abstract public class BattleGround {
     public static volatile boolean gameIsPaused = false;
-    public static volatile boolean gameIsStart =false;
-    public static volatile boolean gameIsEnd=false;
+    public static volatile boolean gameIsStart = false;
+    public static volatile boolean gameIsEnd = false;
     protected static List<PositionInterface> positionInterfaces = TwoDimePositionSet.getPositionInterfaces();
+
     public static List<Good> getGoods() {
         return goods;
     }
+
     public static List<Monster> getMonsters() {
         return monsters;
     }
-    static protected List<Creature> creatures =  Collections.synchronizedList(new ArrayList<Creature>());
-    static protected List<Good> goods =  Collections.synchronizedList(new ArrayList<Good>());
-    static protected  List<Monster> monsters =  Collections.synchronizedList(new ArrayList<Monster>());
+
+    static protected List<Creature> creatures = Collections.synchronizedList(new ArrayList<Creature>());
+    static protected List<Good> goods = Collections.synchronizedList(new ArrayList<Good>());
+    static protected List<Monster> monsters = Collections.synchronizedList(new ArrayList<Monster>());
 
     static public List<PositionInterface> getPositionInterfaces() {
         return positionInterfaces;
@@ -37,13 +40,11 @@ abstract public class BattleGround {
     public void addCreatures(Creature... creatures) {
         for (Creature each : creatures) {
             this.creatures.add(each);
-            if(each instanceof Good)
-                synchronized (goods){
-                goods.add((Good) each);}
-            else if(each instanceof Monster)
-                synchronized (monsters) {
-                    monsters.add((Monster) each);
-                }
+            if (each instanceof Good)
+                goods.add((Good) each);
+            else if (each instanceof Monster)
+                monsters.add((Monster) each);
+
             else
                 throw new RuntimeException("You add what?");
         }
