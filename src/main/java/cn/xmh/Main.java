@@ -1,6 +1,6 @@
 package cn.xmh;
 
-import cn.xmh.View.Application;
+import cn.xmh.view.Application;
 
 import java.awt.*;
 
