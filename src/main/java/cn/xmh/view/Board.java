@@ -15,10 +15,13 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.List;
 
+import static cn.xmh.battleGround.BattleGround.gameIsEnd;
+import static cn.xmh.battleGround.BattleGround.getGoods;
+import static cn.xmh.battleGround.BattleGround.getMonsters;
+
 public class Board extends JPanel implements View {
     final int OFFSET=50;
     public Board() {
-        addKeyListener(new TAdapter());
         setFocusable(true);
         setVisible(true);
         requestFocusInWindow();
@@ -32,13 +35,6 @@ public class Board extends JPanel implements View {
         }
         else {
             show(g, TwoDimeBattleGround.getInstance().getPositionInterfaces());
-            if(BattleGround.gameIsEnd){
-                g.setFont(new Font("Tahoma", Font.BOLD, 20));
-                g.drawString("Game over",this.getWidth()/2,getHeight()/2);
-            }
-            else if(BattleGround.gameIsPaused){
-                g.drawString("Game Pausing",this.getWidth()/2,getHeight()/2);
-            }
         }
     }
 
@@ -57,23 +53,4 @@ public class Board extends JPanel implements View {
             }
     }
 
-    class TAdapter extends KeyAdapter {
-        @Override
-        public void keyPressed(KeyEvent e) {
-            int key = e.getKeyCode();
-            if (key == KeyEvent.VK_SPACE) {
-                if (BattleGround.gameIsStart == false) {
-                    BattleGround.gameIsStart = true;
-                    BattleGround.gameIsPaused = false;
-                    TwoDimeBattleGround.getInstance();
-                    //start game
-                    new ScreenRecorder(
-                            Board.this.getBounds()
-                            ).start();
-                    return;
-                }
-                BattleGround.gameIsPaused=!BattleGround.gameIsPaused;
-            }
-        }
-    }
 }

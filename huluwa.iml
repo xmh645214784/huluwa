@@ -30,5 +30,6 @@
     <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:artoolkitplus:windows-x86_64:2.3.1-1.0" level="project" />
     <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:flandmark:1.07-1.0" level="project" />
     <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:flandmark:windows-x86_64:1.07-1.0" level="project" />
+    <orderEntry type="library" name="TableLayout" level="project" />
   </component>
 </module>

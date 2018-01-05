@@ -10,9 +10,10 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
+import javax.swing.*;
 
 public class ScreenRecorder extends Thread {
-    private Rectangle rectangle;
+    private JFrame jFrame;
     private Robot robot;
     private long i = 0;
     public static final String storeDir="C:\\records";
@@ -22,8 +23,8 @@ public class ScreenRecorder extends Thread {
     }
     private static ScreenRecorder screenRecorder=null;
 
-    public ScreenRecorder(Rectangle rectangle) {
-        this.rectangle = rectangle;
+    public ScreenRecorder(JFrame jFrame) {
+        this.jFrame = jFrame;
         screenRecorder=this;
         try{
             robot = new Robot();
@@ -42,7 +43,7 @@ public class ScreenRecorder extends Thread {
     public void run(){
         while (!Thread.interrupted()){
             try{
-                BufferedImage image = robot.createScreenCapture(rectangle);//捕获制定屏幕矩形区域
+                BufferedImage image = robot.createScreenCapture(jFrame.getBounds());//捕获制定屏幕矩形区域
                 ImageIO.write(image,"png",new File(storeDir+File.separator + i + ".png"));
                 i = i + 1;
                 TimeUnit.MICROSECONDS.sleep(40);//每秒25帧

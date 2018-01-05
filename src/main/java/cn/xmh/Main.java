@@ -1,17 +1,11 @@
 package cn.xmh;
 
-import cn.xmh.view.Application;
+import cn.xmh.view.MainView;
 
 import java.awt.*;
 
 public class Main {
-    public static void main(String[] args) throws ClassNotFoundException {
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                Application ex = new Application();
-                ex.setSize(700,700);
-                ex.setVisible(true);
-            }
-        });
+    public static void main(String[] args) {
+        EventQueue.invokeLater(() -> MainView.getmInstance());
     }
 }

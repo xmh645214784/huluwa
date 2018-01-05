@@ -14,7 +14,7 @@
 
 ## 操作指南
 
-###设置配置文件
+### 设置配置文件
 
 在`resources/configure.properties`文件中有对战场设置、葫芦娃爷爷妖怪们属性的设置。改变值即可改变对应属性，在程序load这个配置文件时会自动对合法性进行检查。
 
@@ -232,13 +232,34 @@ public interface FormationChanger {
 
 swing相关的设计的比较简单就不提了，有一个定时器会每隔100ms驱动界面进行刷新，刷新时UI从战场类中获得所有现存生物的位置，进行绘制。
 
+在swing事件处理时，定义内部类`private class`，通过`父类类名.this`获得父类对象，同时，内部类对外围对象的函数均可调用，但其他类对内部类则无法访问，体现了封装的思想。
+
 #### 总类图
 
 ![](figs/whole.png)
 
-##设计思想
+## 设计思想
 
+本程序运用到许多课上所讲的东西，实践证明，确实老师们所讲的是可以帮助我的编码的。具体的来看，包括这样几点：
 
+1. 多用`assert`断言，让错误无从遁形
+
+2. 在swing事件处理时，内部类继承默认Adapter,使用了默认适配器模式，仅重写自己需要的部分。大大简便了代码的编写。
+
+   ```java
+   private class TAdapter extends KeyAdapter {
+     ......
+     @Override
+     public void keyPressed(KeyEvent e) {
+       int key = e.getKeyCode();
+       if (key == KeyEvent.VK_SPACE) {
+         spaceHandle();
+       }
+     }
+   }
+   ```
+
+   ​
 
 
 

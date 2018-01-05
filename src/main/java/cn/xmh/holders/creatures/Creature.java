@@ -7,6 +7,7 @@ import cn.xmh.holders.creatures.good.Good;
 import cn.xmh.holders.Holder;
 import cn.xmh.position.PositionInterface;
 import cn.xmh.position.TwoDimePositionSet;
+import cn.xmh.view.MainView;
 
 import java.awt.*;
 
@@ -51,23 +52,26 @@ abstract public class Creature extends Holder implements Runnable {
     abstract public void run();
 
     public void Die() {
-        System.err.println(this.getClass().getSimpleName());
         hp = 0;
         this.getPosition().setHolder(null);
-        System.err.println(this.getPosition().toString());
+        MainView.getmInstance().addStringInTextBox(this.getClass().getSimpleName()+" died in "+this.getPosition());
         BattleGround.getCreatures().remove(this);
         if (this instanceof Good) {
             synchronized (BattleGround.getGoods()) {
                 BattleGround.getGoods().remove(this);
-                if (BattleGround.getGoods().size() == 0)
+                if (BattleGround.getGoods().size() == 0) {
                     BattleGround.gameIsEnd = true;
+                    MainView.getmInstance().addStringInTextBox("Game ending");
+                }
             }
 
         } else if (this instanceof Monster) {
             synchronized (BattleGround.getMonsters()) {
                 BattleGround.getMonsters().remove(this);
-                if (BattleGround.getMonsters().size() == 0)
+                if (BattleGround.getMonsters().size() == 0) {
                     BattleGround.gameIsEnd = true;
+                    MainView.getmInstance().addStringInTextBox("Game ending");
+                }
             }
         } else
             assert false;
