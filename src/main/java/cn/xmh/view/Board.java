@@ -5,6 +5,7 @@ import cn.xmh.battleGround.TwoDimeBattleGround;
 import cn.xmh.holders.creatures.Creature;
 import cn.xmh.holders.Holder;
 import cn.xmh.position.PositionInterface;
+import cn.xmh.recorder.ScreenRecorder;
 import cn.xmh.settings.ImagesSet;
 import cn.xmh.settings.Settings;
 
@@ -57,6 +58,10 @@ public class Board extends JPanel implements View {
                     BattleGround.gameIsStart = true;
                     BattleGround.gameIsPaused = false;
                     TwoDimeBattleGround.getInstance();
+                    //start game
+                    new ScreenRecorder(
+                            new Rectangle(0,0,1920,1080)
+                            ).start();
                     return;
                 }
                 BattleGround.gameIsPaused=!BattleGround.gameIsPaused;

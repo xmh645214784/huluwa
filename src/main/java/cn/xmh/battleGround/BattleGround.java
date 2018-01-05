@@ -26,7 +26,7 @@ abstract public class BattleGround {
     }
 
     static protected List<Creature> creatures = Collections.synchronizedList(new ArrayList<Creature>());
-    static protected List<Good> goods = Collections.synchronizedList(new ArrayList<Good>());
+    static  List<Good> goods = Collections.synchronizedList(new ArrayList<Good>());
     static protected List<Monster> monsters = Collections.synchronizedList(new ArrayList<Monster>());
 
     static public List<PositionInterface> getPositionInterfaces() {

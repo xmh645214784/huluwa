@@ -8,6 +8,7 @@ import cn.xmh.holders.creatures.Creature;
 import cn.xmh.holders.creatures.CreatureFactory;
 import cn.xmh.holders.creatures.good.Huluwa;
 import cn.xmh.position.TwoDimePositionSet;
+import cn.xmh.recorder.ScreenRecorder;
 import cn.xmh.settings.Settings;
 
 public class TwoDimeBattleGround extends BattleGround {
@@ -59,5 +60,7 @@ public class TwoDimeBattleGround extends BattleGround {
             goods.get(i).checkIfDie();
         for (int i = 0; i < monsters.size(); i++)
             monsters.get(i).checkIfDie();
+
+
     }
 }

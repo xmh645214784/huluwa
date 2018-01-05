@@ -1,8 +1,13 @@
 package cn.xmh.view;
 
+import cn.xmh.recorder.ScreenRecorder;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.concurrent.TimeUnit;
+
+import static cn.xmh.battleGround.BattleGround.*;
 
 public class Application extends JFrame {
     public Application() {
@@ -21,6 +26,11 @@ public class Application extends JFrame {
         new Timer(100, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 board.repaint();
+                System.err.println(gameIsEnd);
+                System.err.println(""+getGoods().size()+"   "+getMonsters().size());
+                if(gameIsEnd){
+                    ScreenRecorder.getScreenRecorder().interrupt();
+                }
             }
         }).start();
     }
