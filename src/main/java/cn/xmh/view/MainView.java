@@ -120,6 +120,7 @@ public class MainView extends JFrame {
         private void initComponents () {
             // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
             // Generated using JFormDesigner Evaluation license - Xie Minhui
+            panel1 = new JPanel();
             board = new Board();
             label = new JLabel();
             startButton = new JButton();
@@ -136,8 +137,22 @@ public class MainView extends JFrame {
             setResizable(false);
             Container contentPane = getContentPane();
             contentPane.setLayout(null);
-            contentPane.add(board);
-            board.setBounds(0, 0, 750, 610);
+
+            //======== panel1 ========
+            {
+
+                // JFormDesigner evaluation mark
+                panel1.setBorder(new javax.swing.border.CompoundBorder(
+                    new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+                        "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+                        javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
+                        java.awt.Color.red), panel1.getBorder())); panel1.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
+
+                panel1.setLayout(new BoxLayout(panel1, BoxLayout.X_AXIS));
+                panel1.add(board);
+            }
+            contentPane.add(panel1);
+            panel1.setBounds(0, 5, 780, 770);
 
             //---- label ----
             label.setText("Game Status");
@@ -145,25 +160,25 @@ public class MainView extends JFrame {
             label.setForeground(Color.darkGray);
             label.setFont(new Font("Microsoft YaHei UI", Font.PLAIN, 18));
             contentPane.add(label);
-            label.setBounds(930, 10, 135, 45);
+            label.setBounds(880, 10, 135, 45);
 
             //---- startButton ----
             startButton.setText("\u5f00\u59cb");
             startButton.addActionListener(e -> startButtonActionPerformed(e));
             contentPane.add(startButton);
-            startButton.setBounds(new Rectangle(new Point(965, 120), startButton.getPreferredSize()));
+            startButton.setBounds(new Rectangle(new Point(905, 120), startButton.getPreferredSize()));
 
             //---- pauseContinueButton ----
             pauseContinueButton.setText("\u6682\u505c/\u7ee7\u7eed");
             pauseContinueButton.addActionListener(e -> pauseContinueButtonActionPerformed(e));
             contentPane.add(pauseContinueButton);
-            pauseContinueButton.setBounds(new Rectangle(new Point(950, 170), pauseContinueButton.getPreferredSize()));
+            pauseContinueButton.setBounds(new Rectangle(new Point(890, 170), pauseContinueButton.getPreferredSize()));
 
             //---- replayButton ----
             replayButton.setText("\u56de\u653e");
             replayButton.addActionListener(e -> replayButtonActionPerformed(e));
             contentPane.add(replayButton);
-            replayButton.setBounds(new Rectangle(new Point(965, 220), replayButton.getPreferredSize()));
+            replayButton.setBounds(new Rectangle(new Point(905, 220), replayButton.getPreferredSize()));
 
             //======== scrollPane1 ========
             {
@@ -174,14 +189,14 @@ public class MainView extends JFrame {
                 scrollPane1.setViewportView(textArea);
             }
             contentPane.add(scrollPane1);
-            scrollPane1.setBounds(930, 260, 145, 345);
+            scrollPane1.setBounds(840, 260, 210, 520);
 
             //---- gameStatusLabel ----
             gameStatusLabel.setHorizontalAlignment(SwingConstants.CENTER);
             gameStatusLabel.setText("Hello");
             gameStatusLabel.setForeground(Color.red);
             contentPane.add(gameStatusLabel);
-            gameStatusLabel.setBounds(955, 55, 85, 32);
+            gameStatusLabel.setBounds(895, 55, 85, 32);
 
             { // compute preferred size
                 Dimension preferredSize = new Dimension();
@@ -203,6 +218,7 @@ public class MainView extends JFrame {
 
         // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
         // Generated using JFormDesigner Evaluation license - Xie Minhui
+        private JPanel panel1;
         private Board board;
         private JLabel label;
         private JButton startButton;

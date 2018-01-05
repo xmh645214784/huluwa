@@ -24,4 +24,6 @@ public interface ImagesSet {
 
     final Image HelloImage=new ImageIcon(ImagesSet.class.getClassLoader().getResource("hello.png")).getImage();
 
+    final Image MountainImage=new ImageIcon(ImagesSet.class.getClassLoader().getResource("mountain.png")).getImage();
+
 }

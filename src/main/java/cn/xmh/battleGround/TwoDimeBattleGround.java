@@ -1,6 +1,7 @@
 package cn.xmh.battleGround;
 
 import cn.xmh.formations.FormationArrow;
+import cn.xmh.holders.Mountain;
 import cn.xmh.holders.creatures.bad.Lolo;
 import cn.xmh.holders.creatures.bad.Scorpion;
 import cn.xmh.holders.creatures.bad.Snake;
@@ -8,9 +9,12 @@ import cn.xmh.holders.creatures.Creature;
 import cn.xmh.holders.creatures.CreatureFactory;
 import cn.xmh.holders.creatures.good.Grandpa;
 import cn.xmh.holders.creatures.good.Huluwa;
+import cn.xmh.position.PositionInterface;
 import cn.xmh.position.TwoDimePositionSet;
 import cn.xmh.recorder.ScreenRecorder;
 import cn.xmh.settings.Settings;
+
+import java.util.Random;
 
 public class TwoDimeBattleGround extends BattleGround {
     private static TwoDimeBattleGround ourInstance = new TwoDimeBattleGround();
@@ -29,7 +33,7 @@ public class TwoDimeBattleGround extends BattleGround {
         CreatureFactory creatureFactory = new CreatureFactory();
         for (int i = 0; i < 7; i++)
             addCreatures(creatureFactory.createCreature(Huluwa.class, positionInterfaces.get(i * Settings.getInstance().getNRX())));
-        addCreatures(creatureFactory.createCreature(Grandpa.class, positionInterfaces.get(7* Settings.getInstance().getNRX())));
+        addCreatures(creatureFactory.createCreature(Grandpa.class, positionInterfaces.get(7 * Settings.getInstance().getNRX())));
         addCreatures(creatureFactory.createCreature(Snake.class, null));
         addCreatures(creatureFactory.createCreature(Scorpion.class, null));
         for (int i = 0; i < Settings.getInstance().getNR_LOLOS(); i++)
@@ -38,6 +42,13 @@ public class TwoDimeBattleGround extends BattleGround {
         FormationArrow.changFormation(
                 TwoDimePositionSet.getPositionInterface(5, 2), monsters
         );
+
+        for (int i = 0; i < 9; i++) {
+            Random random=new Random();
+            PositionInterface temp=TwoDimePositionSet.getPositionInterface(random.nextInt(Settings.getInstance().getNRX()),random.nextInt(Settings.getInstance().getNRY()));
+            if(temp.getHolder()==null)
+                new Mountain(temp);
+        }
 
     }
 

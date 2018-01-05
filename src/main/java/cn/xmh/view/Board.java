@@ -44,10 +44,10 @@ public class Board extends JPanel implements View {
         int nry = Settings.getInstance().getNRY();
         for (int j = 0; j < nry; j++)
             for (int i = 0; i < nrx; i++) {
-                g.drawImage(ImagesSet.GroundImage, OFFSET+46 * i, OFFSET+46 * j, this);
-                Holder holder = positionInterfaces.get(j * nry + i).getHolder();
+                g.drawImage(ImagesSet.GroundImage, OFFSET+46 * i, OFFSET+46 * j, 46,46,this);
+                Holder holder = positionInterfaces.get(j * nrx + i).getHolder();
                 if (holder != null)
-                    g.drawImage(holder.getImage(), OFFSET+46 * i, OFFSET+46 * j, this);
+                    g.drawImage(holder.getImage(), OFFSET+46 * i, OFFSET+46 * j, 46,46,this);
                 if(holder instanceof Creature)
                     DrawHp.draw(g,OFFSET+46*i,OFFSET+46*j,((Creature) holder).getHp());
             }

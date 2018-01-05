@@ -12,24 +12,21 @@ public class Settings {
         ourInstance = new Settings();
     }
 
-    private int NRX;
-    private int NRY;
-    private int DISTANCE_OF_ENCOUNTER;
-    private int NR_LOLOS;
+    private int NRX=15;
+    private int NRY=15;
+    private int DISTANCE_OF_ENCOUNTER=1;
+    private int NR_LOLOS=5;
 
-    private int DMG_OF_HULUWA;
-    private int HP_OF_HULUWA;
-    private int DMG_OF_GRANDPA;
-    private int HP_OF_GRANDPA;
-    private int DMG_OF_SNAKE;
-    private int HP_OF_SNAKE;
-    private int DMG_OF_SCORPION;
-    private int HP_OF_SCORPION;
-    private int DMG_OF_LOLO;
-
-
-
-    private int HP_OF_LOLO;
+    private int DMG_OF_HULUWA=20;
+    private int HP_OF_HULUWA=100;
+    private int DMG_OF_GRANDPA=1;
+    private int HP_OF_GRANDPA=50;
+    private int DMG_OF_SNAKE=100;
+    private int HP_OF_SNAKE=100;
+    private int DMG_OF_SCORPION=10;
+    private int HP_OF_SCORPION=100;
+    private int DMG_OF_LOLO=30;
+    private int HP_OF_LOLO=20;
 
     public static Settings getInstance() {
         return ourInstance;
@@ -42,16 +39,16 @@ public class Settings {
         try {
             properties.load(new BufferedInputStream(new FileInputStream(this.getClass().getClassLoader().getResource("configure.properties").getFile())));
         } catch (IOException e) {
-            System.err.println("Can't find configure file.");
-            e.printStackTrace();
+            System.err.println("Can't find configure file.Use the default settings");
+            return;
         }
         NRX = Integer.parseInt(properties.getProperty("NRX"));
-        if (NRX < 10 || NRX > 30) {
+        if (NRX < 10 || NRX > 15) {
             System.err.println("Configure file error :NRX");
             System.exit(-1);
         }
         NRY = Integer.parseInt(properties.getProperty("NRY"));
-        if (NRY < 10 || NRY > 30) {
+        if (NRY < 10 || NRY > 15) {
             System.err.println("Configure file error :NRY");
             System.exit(-1);
         }
