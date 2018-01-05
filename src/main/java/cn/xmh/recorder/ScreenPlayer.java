@@ -5,66 +5,66 @@ import java.awt.*;
 import java.io.File;
 
 public class ScreenPlayer extends JFrame {
+    String storeDir;
 
-    public ScreenPlayer() throws HeadlessException {
+    public ScreenPlayer(String storeDir) throws HeadlessException {
         super();
-        ImageIcon temp = new ImageIcon(ScreenRecorder.storeDir+ File.separator+"1.png");
+        this.storeDir = storeDir;
+        ImageIcon temp = new ImageIcon(storeDir + File.separator + "1.png");
         this.setSize(temp.getIconWidth(), temp.getIconHeight());
         Screen p = new Screen();
         Container c = this.getContentPane();
         c.setLayout(new BorderLayout());
-        c.add(p,"Center");
+        c.add(p, "Center");
         new Thread(p).start();
 //        this.pack();
         this.show();
     }
 
-    public static void main(String[] args) {
-        new ScreenPlayer();
-    }
-}
+    class Screen extends JPanel implements Runnable {
+        private BorderLayout borderLayout1 = new BorderLayout();
+        private Image cimage;
 
-class Screen extends JPanel implements Runnable {
-    private BorderLayout borderLayout1 = new BorderLayout();
-    private Image cimage;
+        public void run() {
+            int i = 0;
+            while (true) {
+                try {
+                    if(!new File(storeDir + File.separator+i+".png").exists())
+                        return ;
+                    cimage = loadImage(i + ".png");
+                    i = i + 1;
+                    repaint();
+                    Thread.sleep(40);//与录像时每秒帧数一致
 
-    public void run() {
-        int i = 0;
-        while (true) {
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    System.out.println(e);
+                }
+            }
+        }
+
+        public Image loadImage(String name) {
+            Toolkit tk = Toolkit.getDefaultToolkit();
+            Image image = null;
+            image = tk.getImage(storeDir + File.separator + name);
+            MediaTracker mt = new MediaTracker(this);
+            mt.addImage(image, 0);
             try {
-                cimage = loadImage(i + ".png");
-                i = i + 1;
-                repaint();
-                Thread.sleep(40);//与录像时每秒帧数一致
-
+                mt.waitForID(0);
             } catch (Exception e) {
                 e.printStackTrace();
                 System.out.println(e);
             }
+            return image;
         }
-    }
 
-    public Image loadImage(String name) {
-        Toolkit tk = Toolkit.getDefaultToolkit();
-        Image image = null;
-        image = tk.getImage(ScreenRecorder.storeDir + File.separator + name);
-        MediaTracker mt = new MediaTracker(this);
-        mt.addImage(image, 0);
-        try {
-            mt.waitForID(0);
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println(e);
+        public Screen() {
+            super();
         }
-        return image;
-    }
 
-    public Screen() {
-        super();
-    }
-
-    public void paint(Graphics g) {
-        super.paint(g);
-        g.drawImage(cimage, 0, 0, null);
+        public void paint(Graphics g) {
+            super.paint(g);
+            g.drawImage(cimage, 0, 0, null);
+        }
     }
 }

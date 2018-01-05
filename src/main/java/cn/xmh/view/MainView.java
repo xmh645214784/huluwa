@@ -6,10 +6,13 @@ package cn.xmh.view;
 
 import cn.xmh.battleGround.BattleGround;
 import cn.xmh.battleGround.TwoDimeBattleGround;
+import cn.xmh.recorder.ScreenPlayer;
 import cn.xmh.recorder.ScreenRecorder;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
+import java.util.concurrent.TimeUnit;
 import javax.swing.*;
 
 import static cn.xmh.battleGround.BattleGround.*;
@@ -48,6 +51,7 @@ public class MainView extends JFrame {
         this.pack();
         addKeyListener(new TAdapter());
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.textArea.append("Welcome to my hulu world!\n");
         this.show();
         ///add timer
         new Timer(100, q -> {
@@ -56,8 +60,13 @@ public class MainView extends JFrame {
             if (gameIsPaused) {
                 this.gameStatusLabel.setText("Pausing");
             } else if (gameIsEnd) {
-                ScreenRecorder.getScreenRecorder().interrupt();
                 this.gameStatusLabel.setText("Ending");
+                try {
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                ScreenRecorder.getScreenRecorder().interrupt();
             } else if (gameIsStart) {
                 this.gameStatusLabel.setText("Running");
             } else
@@ -94,6 +103,13 @@ public class MainView extends JFrame {
 
         private void replayButtonActionPerformed (ActionEvent e){
             // TODO add your code here
+            JFileChooser jfc=new JFileChooser(".");
+            jfc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY );
+            jfc.showDialog(new JLabel(), "选择");
+            File file=jfc.getSelectedFile();
+            if(file==null)return;
+            new ScreenPlayer(file.getPath());
+
         }
 
         public void addStringInTextBox(String str){
@@ -151,6 +167,10 @@ public class MainView extends JFrame {
 
             //======== scrollPane1 ========
             {
+
+                //---- textArea ----
+                textArea.setLineWrap(true);
+                textArea.setWrapStyleWord(true);
                 scrollPane1.setViewportView(textArea);
             }
             contentPane.add(scrollPane1);

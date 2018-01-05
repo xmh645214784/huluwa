@@ -6,6 +6,7 @@ import cn.xmh.holders.creatures.bad.Scorpion;
 import cn.xmh.holders.creatures.bad.Snake;
 import cn.xmh.holders.creatures.Creature;
 import cn.xmh.holders.creatures.CreatureFactory;
+import cn.xmh.holders.creatures.good.Grandpa;
 import cn.xmh.holders.creatures.good.Huluwa;
 import cn.xmh.position.TwoDimePositionSet;
 import cn.xmh.recorder.ScreenRecorder;
@@ -28,7 +29,7 @@ public class TwoDimeBattleGround extends BattleGround {
         CreatureFactory creatureFactory = new CreatureFactory();
         for (int i = 0; i < 7; i++)
             addCreatures(creatureFactory.createCreature(Huluwa.class, positionInterfaces.get(i * Settings.getInstance().getNRX())));
-
+        addCreatures(creatureFactory.createCreature(Grandpa.class, positionInterfaces.get(7* Settings.getInstance().getNRX())));
         addCreatures(creatureFactory.createCreature(Snake.class, null));
         addCreatures(creatureFactory.createCreature(Scorpion.class, null));
         for (int i = 0; i < Settings.getInstance().getNR_LOLOS(); i++)
