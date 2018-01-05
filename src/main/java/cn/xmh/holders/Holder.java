@@ -4,7 +4,7 @@ import cn.xmh.position.PositionInterface;
 
 import java.awt.*;
 
-public class Holder{
+abstract public class Holder{
     public Image getImage() {
         return image;
     }

@@ -29,8 +29,16 @@ public class Board extends JPanel implements View {
         super.paint(g);
         if (!BattleGround.gameIsStart) {
             g.drawImage(ImagesSet.HelloImage, 0, 0, this.getWidth(), this.getHeight(), this);
-        } else {
+        }
+        else {
             show(g, TwoDimeBattleGround.getInstance().getPositionInterfaces());
+            if(BattleGround.gameIsEnd){
+                g.setFont(new Font("Tahoma", Font.BOLD, 20));
+                g.drawString("Game over",this.getWidth()/2,getHeight()/2);
+            }
+            else if(BattleGround.gameIsPaused){
+                g.drawString("Game Pausing",this.getWidth()/2,getHeight()/2);
+            }
         }
     }
 
@@ -60,7 +68,7 @@ public class Board extends JPanel implements View {
                     TwoDimeBattleGround.getInstance();
                     //start game
                     new ScreenRecorder(
-                            new Rectangle(0,0,1920,1080)
+                            Board.this.getBounds()
                             ).start();
                     return;
                 }

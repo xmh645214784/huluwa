@@ -40,7 +40,7 @@ public class Settings {
 
     private Settings() {
         try {
-            properties.load(new BufferedInputStream(new FileInputStream("configure.txt")));
+            properties.load(new BufferedInputStream(new FileInputStream(this.getClass().getClassLoader().getResource("configure.properties").getFile())));
         } catch (IOException e) {
             System.err.println("Can't find configure file.");
             e.printStackTrace();
