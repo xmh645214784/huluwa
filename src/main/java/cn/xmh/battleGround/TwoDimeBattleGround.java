@@ -17,6 +17,7 @@ import cn.xmh.settings.Settings;
 
 import java.util.Random;
 import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class TwoDimeBattleGround extends BattleGround {
@@ -31,6 +32,17 @@ public class TwoDimeBattleGround extends BattleGround {
         battle();
     }
 
+    public void reset(){
+        executor.shutdownNow();
+        for(PositionInterface each:positionInterfaces){
+            each.setHolder(null);
+        }
+        monsters.clear();
+        goods.clear();
+        creatures.clear();
+        initCreature();
+        battle();
+    }
 
     private void initCreature() {
         CreatureFactory creatureFactory = new CreatureFactory();
@@ -43,7 +55,7 @@ public class TwoDimeBattleGround extends BattleGround {
             addCreatures(creatureFactory.createCreature(Lolo.class, null));
 
         FormationArrow.changFormation(
-                TwoDimePositionSet.getPositionInterface(5, 2), monsters
+                TwoDimePositionSet.getPositionInterface(8, 8), monsters
         );
 
         for (int i = 0; i < 5; i++) {
@@ -59,9 +71,9 @@ public class TwoDimeBattleGround extends BattleGround {
                 new Tree(temp);
         }
     }
-
+    ExecutorService executor;
     protected void battle() {
-        Executor executor= Executors.newFixedThreadPool(20);
+        executor= Executors.newFixedThreadPool(20);
         for (Creature creature : creatures) {
             creature.setThread(new Thread(creature));
             executor.execute(creature.getThread());

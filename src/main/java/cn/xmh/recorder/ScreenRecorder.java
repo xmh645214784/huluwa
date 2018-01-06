@@ -7,6 +7,8 @@ import java.awt.Robot;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
@@ -16,7 +18,7 @@ public class ScreenRecorder extends Thread {
     private JFrame jFrame;
     private Robot robot;
     private long i = 0;
-    public static final String storeDir="records";
+    public final String storeDir="records"+File.separator+new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 
     public static ScreenRecorder getScreenRecorder() {
         return screenRecorder;
@@ -32,12 +34,6 @@ public class ScreenRecorder extends Thread {
             e.printStackTrace();
             System.out.println(e);
         }
-        try{
-            deleteDir(storeDir);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-
         new File(storeDir).mkdirs();
     }
     public void run(){
@@ -62,17 +58,5 @@ public class ScreenRecorder extends Thread {
         }
     }
 
-    public static void deleteDir(String dir) throws Exception {
-        File file = new File(dir);
-        if (file.isDirectory()) {
-            String[] filelist = file.list();
-            for (String delFile : filelist) {
-                File delfile = new File(dir + File.separator + delFile);
-                delfile.delete();
-            }
-        }
-        else
-            assert false;
-    }
 
 }
