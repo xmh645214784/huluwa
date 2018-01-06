@@ -120,7 +120,9 @@ HP_OF_LOLO=20
 
 ![](figs/cq.jpg)
 
+欢迎各路妖怪充值获得绝佳的游戏体验！
 
+![](figs/alipay.png)
 
 ## 代码结构
 
