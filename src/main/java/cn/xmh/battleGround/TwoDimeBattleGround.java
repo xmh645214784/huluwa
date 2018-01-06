@@ -2,6 +2,7 @@ package cn.xmh.battleGround;
 
 import cn.xmh.formations.FormationArrow;
 import cn.xmh.holders.Mountain;
+import cn.xmh.holders.Tree;
 import cn.xmh.holders.creatures.bad.Lolo;
 import cn.xmh.holders.creatures.bad.Scorpion;
 import cn.xmh.holders.creatures.bad.Snake;
@@ -15,6 +16,8 @@ import cn.xmh.recorder.ScreenRecorder;
 import cn.xmh.settings.Settings;
 
 import java.util.Random;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 public class TwoDimeBattleGround extends BattleGround {
     private static TwoDimeBattleGround ourInstance = new TwoDimeBattleGround();
@@ -43,19 +46,34 @@ public class TwoDimeBattleGround extends BattleGround {
                 TwoDimePositionSet.getPositionInterface(5, 2), monsters
         );
 
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < 5; i++) {
             Random random=new Random();
             PositionInterface temp=TwoDimePositionSet.getPositionInterface(random.nextInt(Settings.getInstance().getNRX()),random.nextInt(Settings.getInstance().getNRY()));
             if(temp.getHolder()==null)
                 new Mountain(temp);
         }
-
+        for (int i = 0; i < 6; i++) {
+            Random random=new Random();
+            PositionInterface temp=TwoDimePositionSet.getPositionInterface(random.nextInt(Settings.getInstance().getNRX()),random.nextInt(Settings.getInstance().getNRY()));
+            if(temp.getHolder()==null)
+                new Tree(temp);
+        }
     }
 
     protected void battle() {
+        Executor executor= Executors.newFixedThreadPool(20);
         for (Creature creature : creatures) {
             creature.setThread(new Thread(creature));
-            creature.getThread().start();
+            executor.execute(creature.getThread());
+
+        }
+    }
+
+    public void notifyAllCreatures(){
+        for (Creature creature : creatures){
+            synchronized (creature) {
+                creature.notifyAll();
+            }
         }
     }
 

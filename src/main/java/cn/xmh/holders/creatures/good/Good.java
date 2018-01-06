@@ -14,7 +14,13 @@ public abstract class Good extends Creature {
     public void run() {
         while (!Thread.interrupted()){
             if(BattleGround.gameIsPaused||BattleGround.gameIsEnd)
-                continue;
+                synchronized (this) {
+                    try {
+                        this.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
             Random rand = new Random();
             final List<Monster>  monsters = BattleGround.getMonsters();
             int reP=position.relativePositionofThis(
@@ -31,6 +37,8 @@ public abstract class Good extends Creature {
             } catch (Exception e) {
 
             }
+            if(hp<=0)
+                return ;
         }
     }
 

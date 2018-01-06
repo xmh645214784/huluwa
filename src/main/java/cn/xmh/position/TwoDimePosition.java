@@ -58,10 +58,17 @@ public class TwoDimePosition implements PositionInterface {
             ;
         }
 
-        if (diffy == 0)
-            return diffx == 1 ? 1 : 2;
+        if (diffy == 0) {
+            if (rd.nextInt(100) > 50)
+                return diffx == 1 ? 1 : 2;
+            else
+                return rd.nextInt(100)>50?3:4;
+        }
         if (diffx == 0) {
-            return diffy == 1 ? 3 : 4;
+            if (rd.nextInt(100) > 50)
+                return diffy == 1 ? 3 : 4;
+            else
+                return rd.nextInt(100)>50?1:2;
         } else if (diffx > 0) {
             if (diffy > 0) {
                 return rd.nextInt(100)>50?1:3;

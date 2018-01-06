@@ -35,6 +35,9 @@ public class MainView extends JFrame {
                 return;
             }
             BattleGround.gameIsPaused = !BattleGround.gameIsPaused;
+            if(BattleGround.gameIsPaused==false){
+                TwoDimeBattleGround.getInstance().notifyAllCreatures();
+            }
         }
 
         @Override
@@ -42,6 +45,9 @@ public class MainView extends JFrame {
             int key = e.getKeyCode();
             if (key == KeyEvent.VK_SPACE) {
                 spaceHandle();
+            }
+            else if(key ==KeyEvent.VK_L){
+                lHandle();
             }
         }
     }
@@ -61,11 +67,6 @@ public class MainView extends JFrame {
                 this.gameStatusLabel.setText("Pausing");
             } else if (gameIsEnd) {
                 this.gameStatusLabel.setText("Ending");
-                try {
-                    TimeUnit.SECONDS.sleep(1);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
                 ScreenRecorder.getScreenRecorder().interrupt();
             } else if (gameIsStart) {
                 this.gameStatusLabel.setText("Running");
@@ -99,17 +100,23 @@ public class MainView extends JFrame {
         private void pauseContinueButtonActionPerformed (ActionEvent e){
             // TODO add your code here
             BattleGround.gameIsPaused = !BattleGround.gameIsPaused;
+            if(BattleGround.gameIsPaused==false){
+                TwoDimeBattleGround.getInstance().notifyAllCreatures();
+            }
         }
 
-        private void replayButtonActionPerformed (ActionEvent e){
-            // TODO add your code here
+        private void lHandle(){
             JFileChooser jfc=new JFileChooser(".");
             jfc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY );
             jfc.showDialog(new JLabel(), "选择");
             File file=jfc.getSelectedFile();
             if(file==null)return;
             new ScreenPlayer(file.getPath());
+        }
 
+        private void replayButtonActionPerformed (ActionEvent e){
+            // TODO add your code here
+            lHandle();
         }
 
         public void addStringInTextBox(String str){

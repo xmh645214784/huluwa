@@ -37,9 +37,9 @@ public class Settings {
 
     private Settings() {
         try {
-            properties.load(new BufferedInputStream(new FileInputStream(this.getClass().getClassLoader().getResource("configure.properties").getFile())));
+            properties.load(new BufferedInputStream(new FileInputStream("configure.properties")));
         } catch (IOException e) {
-            System.err.println("Can't find configure file.Use the default settings");
+            System.out.println("Can't find configure file.Use the default settings");
             return;
         }
         NRX = Integer.parseInt(properties.getProperty("NRX"));

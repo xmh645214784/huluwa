@@ -75,7 +75,7 @@ abstract public class Creature extends Holder implements Runnable {
             }
         } else
             assert false;
-        this.getThread().stop();
+        this.getThread().interrupt();
     }
 
 

@@ -2,23 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5174f679-bd75-4c47-92d5-ac55aaa07bcb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/holders/Tree.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/huluwa.iml" afterPath="$PROJECT_DIR$/huluwa.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/figs/creatures.png" afterPath="$PROJECT_DIR$/figs/creatures.png" />
+      <change beforePath="$PROJECT_DIR$/figs/replay.png" afterPath="$PROJECT_DIR$/figs/replay.png" />
+      <change beforePath="$PROJECT_DIR$/figs/replaying.png" afterPath="$PROJECT_DIR$/figs/replaying.png" />
+      <change beforePath="$PROJECT_DIR$/figs/游戏界面1.png" afterPath="$PROJECT_DIR$/figs/游戏界面1.png" />
+      <change beforePath="$PROJECT_DIR$/figs/游戏界面2.png" afterPath="$PROJECT_DIR$/figs/游戏界面2.png" />
       <change beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/battleGround/TwoDimeBattleGround.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/battleGround/TwoDimeBattleGround.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/holders/Mountain.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/holders/Mountain.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/Creature.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/Creature.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/bad/Monster.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/bad/Monster.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/good/Good.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/good/Good.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/position/TwoDimePosition.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/position/TwoDimePosition.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/recorder/ScreenRecorder.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/recorder/ScreenRecorder.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/settings/ImagesSet.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/settings/ImagesSet.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/settings/Settings.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/settings/Settings.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/view/Board.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/view/Board.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/view/MainView.java" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/view/MainView.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xmh/view/MainView.jfd" afterPath="$PROJECT_DIR$/src/main/java/cn/xmh/view/MainView.jfd" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/configure.properties" afterPath="$PROJECT_DIR$/src/main/resources/configure.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ground.png" afterPath="$PROJECT_DIR$/src/main/resources/ground.png" />
-      <change beforePath="$PROJECT_DIR$/target/classes/configure.properties" afterPath="$PROJECT_DIR$/target/classes/configure.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ground.png" afterPath="$PROJECT_DIR$/target/classes/ground.png" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/configure.properties" afterPath="$PROJECT_DIR$/configure.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hello.png" afterPath="$PROJECT_DIR$/src/main/resources/hello.png" />
+      <change beforePath="$PROJECT_DIR$/target/classes/configure.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello.png" afterPath="$PROJECT_DIR$/target/classes/hello.png" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,79 +39,126 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/huluwa$Main.coverage" NAME="Main Coverage Results" MODIFIED="1514563442823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/huluwa$Main.coverage" NAME="Main Coverage Results" MODIFIED="1515205653843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-          <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/view/Board.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="49" column="87" lean-forward="false" selection-start-line="49" selection-start-column="87" selection-end-line="49" selection-end-column="87" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ImagesSet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/settings/ImagesSet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="412">
-                  <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pom.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Settings.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/settings/Settings.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DrawHp.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/view/DrawHp.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="configure.properties" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/configure.properties">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-338">
-                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/view/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Good.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/good/Good.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+              <folding>
+                <element signature="e#1454#1455#0" expanded="true" />
+                <element signature="e#1497#1498#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PositionInterface.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/position/PositionInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwoDimePosition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/position/TwoDimePosition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="70" column="45" lean-forward="false" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+              <folding>
+                <element signature="e#2288#2289#0" expanded="true" />
+                <element signature="e#2324#2325#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Monster.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/bad/Monster.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="508">
+              <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/view/MainView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-32">
+              <caret line="116" column="65" lean-forward="true" selection-start-line="116" selection-start-column="65" selection-end-line="116" selection-end-column="65" />
+              <folding>
+                <marker date="1515207088308" expanded="false" signature="3835:8613" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1515207088308" expanded="false" signature="8633:9189" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/settings/Settings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DrawHp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/view/DrawHp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScreenPlayer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/recorder/ScreenPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="868">
+              <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+              <folding>
+                <element signature="e#1864#1865#0" expanded="true" />
+                <element signature="e#1895#1896#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScreenRecorder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/recorder/ScreenRecorder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-510">
+              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+              <folding>
+                <element signature="e#546#547#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -135,9 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Position/TwoDimePosition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Holders/Creatures/Creature.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Holders/Creatures/Good/Grandpa.java" />
         <option value="$PROJECT_DIR$/src/main/java/Holders/Creatures/Good/Good.java" />
         <option value="$PROJECT_DIR$/src/main/java/BattleGround/TwoDimeBattleGround.java" />
         <option value="$PROJECT_DIR$/src/main/java/Settings/Settings.java" />
@@ -164,28 +217,31 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/Holders/Creatures/Bad/Monster.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/holders/Creatures/Bad/Monster.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/Bad/Monster.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/bad/Monster.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/recorder/Recorder.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/recorder/CropRegion.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/recorder/ImagePanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/battleGround/BattleGround.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/holders/Holder.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/view/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/recorder/ScreenRecorder.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/view/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/view/Test.jfd" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/Creature.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/recorder/ScreenPlayer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/battleGround/TwoDimeBattleGround.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/holders/Mountain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/view/MainView.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/view/Board.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/view/MainView.jfd" />
         <option value="$PROJECT_DIR$/src/main/resources/configure.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/settings/ImagesSet.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/settings/ImagesSet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/holders/Mountain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/holders/Tree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/Creature.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/good/Good.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/bad/Monster.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/battleGround/TwoDimeBattleGround.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/position/TwoDimePosition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/view/MainView.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/xmh/settings/Settings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/xmh/recorder/ScreenRecorder.java" />
       </list>
     </option>
   </component>
@@ -202,7 +258,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="108" />
     <option name="y" value="28" />
     <option name="width" value="1400" />
@@ -226,10 +282,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,74 +329,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xmh" type="462c0819:PsiDirectoryNode" />
-              <item name="battleGround" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huluwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huluwa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xmh" type="462c0819:PsiDirectoryNode" />
-              <item name="formations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huluwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huluwa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xmh" type="462c0819:PsiDirectoryNode" />
-              <item name="holders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huluwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huluwa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xmh" type="462c0819:PsiDirectoryNode" />
-              <item name="holders" type="462c0819:PsiDirectoryNode" />
-              <item name="creatures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huluwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huluwa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xmh" type="462c0819:PsiDirectoryNode" />
-              <item name="holders" type="462c0819:PsiDirectoryNode" />
-              <item name="creatures" type="462c0819:PsiDirectoryNode" />
-              <item name="bad" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huluwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huluwa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xmh" type="462c0819:PsiDirectoryNode" />
-              <item name="holders" type="462c0819:PsiDirectoryNode" />
-              <item name="creatures" type="462c0819:PsiDirectoryNode" />
-              <item name="good" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huluwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huluwa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xmh" type="462c0819:PsiDirectoryNode" />
-              <item name="position" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huluwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huluwa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xmh" type="462c0819:PsiDirectoryNode" />
               <item name="recorder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -370,15 +356,12 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="huluwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huluwa" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,11 +374,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Project\huluwa\src\main\resources" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Holders" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\huluwa" />
+      <recent name="D:\Project\huluwa\src" />
+      <recent name="D:\Project\huluwa\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -629,7 +614,8 @@
       <workItem from="1515126725930" duration="6741000" />
       <workItem from="1515140942859" duration="3597000" />
       <workItem from="1515147053319" duration="6384000" />
-      <workItem from="1515167791458" duration="1618000" />
+      <workItem from="1515167791458" duration="2718000" />
+      <workItem from="1515204323128" duration="4991000" />
     </task>
     <task id="LOCAL-00001" summary="add creaturefactory">
       <created>1514378843659</created>
@@ -656,11 +642,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99059000" />
+    <option name="totallyTimeSpent" value="105150000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="108" y="28" width="1400" height="1000" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -671,11 +656,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297055" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34355178" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36516854" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22254336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -791,8 +776,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/MainWin.form" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/MainWin.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/MainForm.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/View/MainForm.form" />
     <entry file="jrt://E:/jdk9.0.1!/java.base/sun/security/ssl/ServerNameExtension.class">
@@ -858,21 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/good/Good.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="20" column="70" lean-forward="false" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/bad/Monster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/recorder/CropRegion.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/recorder/ImagePanel.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/recorder/Recorder.java" />
@@ -899,36 +867,6 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>Details</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.xmh.holders.creatures.bad.Lolo">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.xmh.holders.creatures.bad.Lolo</OriginalElement>
-          <nodes>
-            <node x="" y="">cn.xmh.holders.creatures.Creature</node>
-            <node x="" y="">cn.xmh.holders.creatures.bad.Scorpion</node>
-            <node x="" y="">cn.xmh.holders.creatures.CreatureFactory</node>
-            <node x="" y="">cn.xmh.holders.creatures.CreatureFactoryInterface</node>
-            <node x="" y="">java.lang.Runnable</node>
-            <node x="" y="">cn.xmh.holders.creatures.bad.Lolo</node>
-            <node x="" y="">cn.xmh.holders.creatures.bad.Monster</node>
-            <node x="" y="">cn.xmh.holders.creatures.good.Huluwa</node>
-            <node x="" y="">cn.xmh.holders.creatures.bad.Snake</node>
-            <node x="" y="">cn.xmh.holders.Holder</node>
-            <node x="" y="">cn.xmh.holders.creatures.good.Good</node>
-            <node x="" y="">cn.xmh.holders.Mountain</node>
-            <node x="" y="">cn.xmh.holders.creatures.good.Grandpa</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="180.0" y="298.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
@@ -1011,14 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/position/PositionInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/formations/FormationChanger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1066,43 +996,98 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/view/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/view/Test.jfd" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/Creature.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/CreatureFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="72" column="78" lean-forward="false" selection-start-line="72" selection-start-column="78" selection-end-line="72" selection-end-column="78" />
+        <state relative-caret-position="-62">
+          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/view/MainView.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configure.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-338">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/settings/ImagesSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="27" column="90" lean-forward="false" selection-start-line="27" selection-start-column="90" selection-end-line="27" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/cn.xmh.holders.creatures.bad.Lolo">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>cn.xmh.holders.creatures.bad.Lolo</OriginalElement>
+          <nodes>
+            <node x="" y="">cn.xmh.holders.creatures.Creature</node>
+            <node x="" y="">cn.xmh.holders.creatures.bad.Scorpion</node>
+            <node x="" y="">cn.xmh.holders.Tree</node>
+            <node x="" y="">cn.xmh.holders.creatures.CreatureFactory</node>
+            <node x="" y="">cn.xmh.holders.creatures.CreatureFactoryInterface</node>
+            <node x="" y="">java.lang.Runnable</node>
+            <node x="" y="">cn.xmh.holders.creatures.bad.Lolo</node>
+            <node x="" y="">cn.xmh.holders.creatures.bad.Monster</node>
+            <node x="" y="">cn.xmh.holders.creatures.good.Huluwa</node>
+            <node x="" y="">cn.xmh.holders.creatures.bad.Snake</node>
+            <node x="" y="">cn.xmh.holders.Holder</node>
+            <node x="" y="">cn.xmh.holders.creatures.good.Good</node>
+            <node x="" y="">cn.xmh.holders.Mountain</node>
+            <node x="" y="">cn.xmh.holders.creatures.good.Grandpa</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.3000000000000003" x="230.0" y="171.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/position/TwoDimePositionSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/holders/Tree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding>
-            <element signature="e#2899#2900#0" expanded="false" />
-            <element signature="e#2924#2925#0" expanded="false" />
-            <element signature="e#2957#2958#0" expanded="false" />
-            <element signature="e#2985#2986#0" expanded="false" />
-            <element signature="e#3029#3030#0" expanded="false" />
-            <element signature="e#3065#3066#0" expanded="false" />
-            <element signature="e#3158#3159#0" expanded="false" />
-            <element signature="e#3187#3188#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#203#204#0" expanded="false" />
+            <element signature="e#255#256#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/battleGround/BattleGround.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/battleGround/TwoDimeBattleGround.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="49" column="25" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/holders/Mountain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1115,98 +1100,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/position/TwoDimePosition.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/battleGround/TwoDimeBattleGround.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="434">
+          <caret line="89" column="33" lean-forward="false" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/recorder/ScreenPlayer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/battleGround/BattleGround.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-          <folding>
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1895#1896#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/position/TwoDimePositionSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="-122">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/CreatureFactory.java">
+    <entry file="jar://E:/jdk9.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-62">
-          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        <state relative-caret-position="197">
+          <caret line="1010" column="16" lean-forward="false" selection-start-line="1010" selection-start-column="16" selection-end-line="1010" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/view/MainView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/bad/Monster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/Creature.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-          <folding>
-            <element signature="e#3483#3484#0" expanded="false" />
-            <element signature="e#3537#3538#0" expanded="false" />
-            <marker date="1515168068133" expanded="false" signature="3594:8372" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1515168068133" expanded="false" signature="8392:8948" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
+          <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/recorder/ScreenRecorder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/view/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/holders/creatures/good/Good.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="49" column="87" lean-forward="false" selection-start-line="49" selection-start-column="87" selection-end-line="49" selection-end-column="87" />
+          <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding>
+            <element signature="e#1454#1455#0" expanded="true" />
+            <element signature="e#1497#1498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/position/PositionInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/view/MainView.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/settings/ImagesSet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/position/TwoDimePosition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/configure.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-338">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="467">
+          <caret line="70" column="45" lean-forward="false" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+          <folding>
+            <element signature="e#2288#2289#0" expanded="true" />
+            <element signature="e#2324#2325#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1220,8 +1180,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/settings/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        <state relative-caret-position="840">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/recorder/ScreenRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/recorder/ScreenPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="e#1864#1865#0" expanded="true" />
+            <element signature="e#1895#1896#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/view/MainView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="116" column="65" lean-forward="true" selection-start-line="116" selection-start-column="65" selection-end-line="116" selection-end-column="65" />
+          <folding>
+            <marker date="1515207088308" expanded="false" signature="3835:8613" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1515207088308" expanded="false" signature="8633:9189" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/xmh/view/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
           <folding />
         </state>
       </provider>

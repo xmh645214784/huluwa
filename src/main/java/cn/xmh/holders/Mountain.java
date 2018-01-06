@@ -6,6 +6,6 @@ import cn.xmh.settings.ImagesSet;
 public class Mountain extends  Holder {
     public Mountain(PositionInterface position) {
         //TODO alter this image to mountain image
-        super(ImagesSet.GrandpaImage, position);
+        super(ImagesSet.MountainImage, position);
     }
 }

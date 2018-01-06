@@ -22,7 +22,13 @@ public abstract class Monster extends Creature {
     public void run() {
         while (!Thread.interrupted()) {
             if (BattleGround.gameIsPaused || BattleGround.gameIsEnd)
-                continue;
+                synchronized (this) {
+                    try {
+                        this.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
             Random rand = new Random();
             final List<Good> goods = BattleGround.getGoods();
             int reP = position.relativePositionofThis(
@@ -45,9 +51,9 @@ public abstract class Monster extends Creature {
             try {
                 Thread.sleep(rand.nextInt(1000) + 1000);
             } catch (Exception e) {
-
-
             }
+            if(hp<=0)
+                return ;
         }
     }
 }
